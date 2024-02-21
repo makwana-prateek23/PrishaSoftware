@@ -26,14 +26,14 @@ function Header() {
           isScrolled ? "bg-blue" : "bg-transparent"
         }`}
       >
-        <nav className=" flex justify-between px-16 items-center w-full">
-          <div className=" logo items-center py-14">
-            <img src={logo} alt="Logo" />
-          </div>
+        <div className=" logo items-center flex">
+          <img src={logo} alt="Logo" />
+        </div>
+        <nav className=" flex  px-16 items-center w-full">
           <div>
-            <ul className="flex mx-4 font-semibold items-center">
+            <ul className="flex mx-4 justify-evenly text-xl font-semibold items-center">
               <li
-                className={`relative mx-4 ${
+                className={`relative mx-6 ${
                   location.pathname === "/" ? "active" : ""
                 }`}
               >
@@ -43,7 +43,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-4 ${
+                className={`relative mx-6 ${
                   location.pathname === "/about" ? "active" : ""
                 }`}
               >
@@ -53,7 +53,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-4 ${
+                className={`relative mx-6 ${
                   location.pathname === "/contact" ? "active" : ""
                 }`}
               >
@@ -63,7 +63,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-4 ${
+                className={`relative mx-6 ${
                   location.pathname === "/services" ? "active" : ""
                 }`}
               >
@@ -73,7 +73,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-4 ${
+                className={`relative mx-6 ${
                   location.pathname === "/team" ? "active" : ""
                 }`}
               >
