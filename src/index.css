@@ -1,0 +1,246 @@
+:root {
+  /* Primary colors */
+  --primary-color: #01358d;
+  --primary-color-light: #9deed8;
+  --text-color: #f9556d;
+  --text-color-secondary: #ee2852;
+  --primary-color-dark: #0a1f45;
+
+  /* Secondary colors */
+  --secondary-color: #666666;
+  --secondary-color-light: #aaaaaa;
+  --secondary-color-dark: #0d2753;
+
+  /* Background colors */
+  --background-color: #ffffff;
+  --background-color-dark: #fbf9f9;
+  --background-color-light: #fff3f4;
+
+  /* Text colors */
+  --text-color: #000000;
+  --text-color-light: #ffffff;
+  --text-color-dark: #666666;
+
+  /* Additional colors */
+  --text-color: #ee2852;
+  --text-color-secondary: #f9556d;
+  --success-color: #a6a6a6;
+  --info-color: #eff0f3;
+}
+body {
+  line-height: 25px;
+}
+html,
+body {
+  height: 100%;
+}
+main {
+  min-height: 100%;
+}
+
+.footerLogo {
+  width: 180px;
+}
+.line {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: var(--text-color);
+  transition: width 0.3s ease-in-out;
+}
+
+li:hover .line {
+  width: 100%;
+}
+
+li.active .line {
+  width: 100%;
+  transition: none; /* Override transition for the active link */
+}
+
+.wrapper {
+  background-image: url(./Components/Assets/h4-background-img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 0; /* Make sure it's lower than your footer */
+  position: relative; /* Ensure proper stacking context */
+}
+
+/* Adjust the size of the Swiper slides */
+.swiper-slide {
+  width: 160%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden; /* Decrease height if needed */
+}
+
+/* Ensure images fill the slide container */
+.swiper-slide img {
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+}
+
+/* Ensure the previous and next slides are visible */
+.swiper-wrapper {
+  overflow: visible;
+}
+
+/* Adjust the rotation and stretch parameters for the coverflow effect */
+.swiper-slide-prev,
+.swiper-slide-next,
+.swiper-slide-duplicate-prev,
+.swiper-slide-duplicate-next {
+  max-width: 90%;
+  background: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
+  /* Adjust rotation and scale as needed */
+}
+
+.swiper-pagination {
+  display: none;
+}
+/* .swiper-slide-active {
+  transform: translateX(0) !important;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide {
+  border-radius: 10px !important;
+} */
+.swiper-container {
+  width: 110%; /* Adjust the width as needed */
+  height: 400px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 12px;
+  text-align: center;
+
+  /* Adjust the height as needed */
+  /* Center the Swiper horizontally */
+}
+.swiper-slide-shadow-prev,
+.swiper-slide-shadow-next {
+  display: none !important;
+}
+
+.Extra-heading {
+  color: lightsalmon;
+  font-size: 120px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -140px;
+  z-index: 0.3;
+  opacity: 1.4;
+}
+
+.button-1 {
+  position: relative; /* Ensure the parent container is positioned */
+  background-color: var(--primary-color);
+  border: none; /* Remove button border if necessary */
+  cursor: pointer;
+}
+.button-1::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the pseudo-element */
+  top: 2px; /* Adjust as needed */
+  left: 2px; /* Adjust as needed */
+  right: 2px; /* Adjust as needed */
+  bottom: 2px; /* Adjust as needed */
+  background-color: black; /* Color of the shadow */
+  filter: brightness(80%); /* Adjust brightness to control shadow intensity */
+  z-index: -1; /* Ensure the shadow is behind the button */
+  border-radius: 50%; /* Adjust border-radius to match the button */
+}
+.Quality-1 {
+  position: relative;
+  background-color: #9deed8;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 50%;
+}
+.Quality-2 {
+  position: relative;
+  background-color: #01358d;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+}
+
+.Quality-3 {
+  position: relative;
+  background-color: #ee2852;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+}
+
+.features {
+  position: relative;
+  width: 100%;
+}
+
+.features-inner {
+  position: relative !important;
+  /* Ensure inner features are positioned relative */
+  /* Set a higher display: flex;  z-index to ensure it appears above the SVG */
+}
+
+.features-svg {
+  position: absolute;
+  width: 100%; /* Set width to ensure SVG occupies full width */
+  height: auto;
+  top: 0;
+  /* Set height to auto to maintain aspect ratio */
+}
+
+.qodef-process-wave-line {
+  z-index: -1;
+  /* Make sure the SVG is displayed as a block element */
+}
+.feature-2 {
+  position: relative;
+  bottom: 60px;
+}
+
+.quality-text {
+  font-size: 34px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.Circularbar {
+  width: 180px;
+  height: 18 0px;
+}
+
+.laptopImage {
+  width: 520px;
+  height: 520px;
+}
+
+.email {
+  background-image: url(../src/Components/Assets/AboutImage.jpg);
+  background-size: cover;
+  background-position: center;
+}
