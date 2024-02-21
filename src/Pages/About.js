@@ -225,7 +225,9 @@ function AboutUs() {
               </div>
             </section>
             <section>
-              <div></div>
+              <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl flex justify-center">
+                <AboutSwiper images={images} />
+              </div>
             </section>
             <section>
               <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
@@ -301,11 +303,6 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <section>
-              <div>
-                <AboutSwiper images={images} />
               </div>
             </section>
           </main>

@@ -26,12 +26,12 @@ function Header() {
           isScrolled ? "bg-blue" : "bg-transparent"
         }`}
       >
-        <div className=" logo items-center flex">
+        <div className=" logo items-center  flex mx-24">
           <img src={logo} alt="Logo" />
         </div>
         <nav className=" flex  px-16 items-center w-full">
           <div>
-            <ul className="flex mx-4 justify-evenly text-xl font-semibold items-center">
+            <ul className="flex mx-4 justify-evenly text-lg font-semibold items-center">
               <li
                 className={`relative mx-6 ${
                   location.pathname === "/" ? "active" : ""
@@ -54,16 +54,6 @@ function Header() {
               </li>
               <li
                 className={`relative mx-6 ${
-                  location.pathname === "/contact" ? "active" : ""
-                }`}
-              >
-                <Link to="/contact" style={{ color: "var(--primary-color)" }}>
-                  Contact-US
-                  <span className="line" />
-                </Link>
-              </li>
-              <li
-                className={`relative mx-6 ${
                   location.pathname === "/services" ? "active" : ""
                 }`}
               >
@@ -79,6 +69,16 @@ function Header() {
               >
                 <Link to="/team" style={{ color: "var(--primary-color)" }}>
                   Team
+                  <span className="line" />
+                </Link>
+              </li>
+              <li
+                className={`relative mx-6 ${
+                  location.pathname === "/contact" ? "active" : ""
+                }`}
+              >
+                <Link to="/contact" style={{ color: "var(--primary-color)" }}>
+                  Contact-US
                   <span className="line" />
                 </Link>
               </li>

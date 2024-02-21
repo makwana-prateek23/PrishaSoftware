@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/About";
+import Services from "./Pages/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactUs from "./Pages/ContactUs";
@@ -22,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </Router>
       {/* <MYSwiper /> */}

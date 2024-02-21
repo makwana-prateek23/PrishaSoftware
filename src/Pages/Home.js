@@ -5,7 +5,6 @@ import Quality1 from "../Components/Assets/Quality1.png";
 import Quality2 from "../Components/Assets/Quality2.png";
 import ImageBack2 from "../Components/Assets/ImageBack2.png";
 import CircularProgressBar from "../Components/CircularBar";
-import Wave from "../Components/Assets/Wave.png";
 import Laptop from "../Components/Assets/Laptop.png";
 import backimage from "../Components/Assets/backImage.png";
 function Home() {
@@ -78,7 +77,7 @@ function Home() {
                 </div>
               </div>
               <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-                <div className="relative bottom-16 pt-16">
+                <div className="flex justify-center">
                   <MySwiper />
                 </div>
               </section>

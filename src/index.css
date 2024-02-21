@@ -244,3 +244,25 @@ li.active .line {
   background-size: cover;
   background-position: center;
 }
+
+.about-swiper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-about-slide img {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  align-items: center;
+}
+
+.ServicesBack {
+  background-image: url("../src//Components/Assets/Services/ServicesBack.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+}
