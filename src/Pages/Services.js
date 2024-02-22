@@ -168,7 +168,7 @@ function Services() {
           <section style={{ backgroundColor: "#fef2f4" }}>
             <div className="mx-auto px-2 sm:px-6 lg:px-8 py-24 max-w-screen-xl">
               <div className="flex justify-between items-center ">
-                <div className="ml-4">
+                {/* <div className="ml-4">
                   {section2.map((section2, index) => (
                     <div
                       key={index}
@@ -192,12 +192,15 @@ function Services() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
                 {/* Left Column */}
-                {/* <div>
+                <div>
                   {sections.map((section, index) => (
-                    <div key={index} className="flex  items-center mb-6">
-                      <div className="mb-6">
+                    <div
+                      key={index}
+                      className="flex flex-col items-center mb-6"
+                    >
+                      <div className="mb-6 flex">
                         <div className="mr-4">
                           <h5
                             className="text-2xl ml-3 font-bold"
@@ -219,7 +222,7 @@ function Services() {
                       </div>
                     </div>
                   ))}
-                </div> */}
+                </div>
 
                 {/* Middle Column */}
                 <div className="mr-2">
