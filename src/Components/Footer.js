@@ -28,9 +28,9 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="flex items-center justify-center bg-white rounded-full w-8 h-8">
+                  <div className="flex items-center justify-center bg-white rounded-full w-8 h-8">
                     <i
-                      class="fa-brands fa-facebook"
+                      className="fa-brands fa-facebook"
                       style={{ color: "var(--primary-color)" }}
                     ></i>
                   </div>
@@ -42,9 +42,9 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="flex items-center justify-center bg-white rounded-full w-8 h-8">
+                  <div className="flex items-center justify-center bg-white rounded-full w-8 h-8">
                     <i
-                      class="fa-brands fa-instagram"
+                      className="fa-brands fa-instagram"
                       style={{ color: "var(--primary-color)" }}
                     ></i>
                   </div>
@@ -56,9 +56,9 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="flex items-center justify-center bg-white rounded-full w-8 h-8">
+                  <div className="flex items-center justify-center bg-white rounded-full w-8 h-8">
                     <i
-                      class="fa-brands fa-linkedin"
+                      className="fa-brands fa-linkedin"
                       style={{ color: "var(--primary-color)" }}
                     ></i>
                   </div>
@@ -77,27 +77,27 @@ function Footer() {
           <ul>
             <li className="">
               <span style={{ color: "var(--text-color)" }} className="mr-2 ">
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
               </span>
               406/A, Forth Floor, Shivalay Complex, Mavdi Chowk, Mavdi Main
               Road, Mavdi, Rajkot, Gujarat 360004
             </li>
             <li className="">
               <span style={{ color: "var(--text-color)" }} className="mr-2">
-                <i class="fa-regular fa-clock"></i>
+                <i className="fa-regular fa-clock"></i>
               </span>
               Monday - Saturday : 9am - 7pm
             </li>
             <li className="s">
               {" "}
               <span style={{ color: "var(--text-color)" }} className="mr-2 ">
-                <i class="fa-regular fa-envelope"></i>
+                <i className="fa-regular fa-envelope"></i>
               </span>
               info@Prishasoftware.com
             </li>
             <li>
               <span style={{ color: "var(--text-color)" }} className="mr-2 ">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </span>
               63536 51151
             </li>
@@ -129,11 +129,12 @@ function Footer() {
         <div>
           <div className="flex flex-col items-center">
             <h4 className="text-2xl font-semibold pb-6 ">Services</h4>
-            <ul className="">
+            <ul>
               <li>ERP Solution</li>
+              <li>Android/Ios Development</li>
               <li>Web Application</li>
-              <li>Web Services</li>
-              <li>Accounting Solution</li>
+              <li>Web Services/Hosting</li>
+              <li>Accounting Software</li>
             </ul>
           </div>
         </div>
@@ -141,7 +142,7 @@ function Footer() {
       <div className="text-center py-8" style={{ backgroundColor: "#0a1f45" }}>
         Copyright ©{currentYear} Prisha Software Pvt Ltd. All rights reserved.
       </div>
-      <div className="fixed bottom-6 right-4 flex items-center justify-center bg-blue-100 rounded-full w-8 h-8">
+      <div className="fixed bottom-6 right-4 flex items-center justify-center bg-blue-100 rounded-full w-12 h-12">
         <BackToTopButton />
       </div>
     </footer>

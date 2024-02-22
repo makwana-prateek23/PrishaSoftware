@@ -265,4 +265,40 @@ li.active .line {
   background-size: cover;
   background-position: center;
   min-height: 70vh;
+  background-attachment: fixed;
+}
+
+.Servicefeature1 {
+  padding: 12px;
+  width: 320px;
+  height: 390px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Servicefeature2 {
+  padding: 12px;
+  height: 390px;
+  width: 320px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.Servicefeature3 {
+  padding: 12px;
+  height: 370px;
+  width: 320px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Service-main {
+  min-height: 600px;
+  padding: 122px;
+}
+
+.ServiceBack2 {
+  background-image: url("../src/Components/Assets/Services/ServiceBack2.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  background-attachment: fixed;
 }
