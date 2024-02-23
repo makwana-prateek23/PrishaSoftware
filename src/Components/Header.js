@@ -1,23 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../Components/Assets/logo.png";
 // Import your CSS file
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation(); // Get the current location
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div>
