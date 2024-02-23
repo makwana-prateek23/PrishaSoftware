@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Layout from "../Components/Layout";
 import MySwiper from "../Components/MYSwiper";
 import Quality1 from "../Components/Assets/Quality1.png";
@@ -57,7 +58,7 @@ function Home() {
                           boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
                         }}
                       >
-                        Read More
+                        <Link to="/blog">Read More</Link>
                       </button>
                     </div>
                   </div>
@@ -70,7 +71,7 @@ function Home() {
                           boxShadow: "2px 6px 6px rgba(0, 0, 0, 0.5)",
                         }}
                       >
-                        Get in Touch
+                        <Link to="/contact">Get in Touch</Link>
                       </button>
                     </div>
                   </div>
@@ -363,7 +364,7 @@ function Home() {
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
                       }}
                     >
-                      Read More
+                      <Link to="/contact">Read More</Link>
                     </button>
                   </div>
                 </div>
@@ -398,7 +399,7 @@ function Home() {
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
                       }}
                     >
-                      Read More
+                      <Link to="/contact">Read More</Link>
                     </button>
                   </div>
                 </div>
