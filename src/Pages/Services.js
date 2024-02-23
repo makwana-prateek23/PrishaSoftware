@@ -14,7 +14,7 @@ function Services() {
     },
     {
       icon: "fa-solid fa-chart-simple",
-      heading: "Best Record",
+      heading: "Amazing Suport",
       paragraph: "We have a great record <br>in this business",
     },
     {
@@ -41,7 +41,7 @@ function Services() {
     },
   ];
   return (
-    <div>
+    <div clas>
       <Layout>
         <main>
           <div className="ServicesBack py-16 flex justify-center items-center text-center">
@@ -196,14 +196,11 @@ function Services() {
                 {/* Left Column */}
                 <div>
                   {sections.map((section, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col items-center mb-6"
-                    >
-                      <div className="mb-6 flex">
-                        <div className="mr-4">
+                    <div key={index} className="flex flex-col  mb-6">
+                      <div className="mb-6 flex justify-between ">
+                        <div style={{ flex: "1 1 50%" }}>
                           <h5
-                            className="text-2xl ml-3 font-bold"
+                            className="text-2xl ml-2 font-bold"
                             style={{ color: "var(--primary-color)" }}
                           >
                             {section.heading}
@@ -214,11 +211,11 @@ function Services() {
                             }}
                           ></p>
                         </div>
-                        <span className="ml-4">
+                        <div className="">
                           <i
                             className={`fa- ${section.icon} text-3xl text-red-500 mb-2`}
                           ></i>
-                        </span>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -230,27 +227,32 @@ function Services() {
                 </div>
 
                 {/* Right Column */}
-                <div className="ml-4">
+                <div>
                   {section2.map((section2, index) => (
                     <div
                       key={index}
-                      className="flex flex-col justify-center items-center mb-6"
+                      className="flex flex-col  mb-6"
+                      style={{ width: "180px" }}
                     >
-                      <div className="items-center">
-                        <h5
-                          className="text-2xl font-bold"
-                          style={{ color: "var(--primary-color)" }}
-                        >
-                          {section2.heading}
+                      <div className="mb-6 flex justify-between ">
+                        <div style={{ flex: "1 1 50%" }}>
+                          <h5
+                            className="text-2xl ml-3 font-bold"
+                            style={{ color: "var(--primary-color)" }}
+                          >
+                            {section2.heading}
+                          </h5>
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: section2.paragraph,
+                            }}
+                          ></p>
+                        </div>
+                        <div className="">
                           <i
                             className={`fa- ${section2.icon} text-3xl text-red-500 mb-2`}
                           ></i>
-                        </h5>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: section2.paragraph,
-                          }}
-                        ></p>
+                        </div>
                       </div>
                     </div>
                   ))}

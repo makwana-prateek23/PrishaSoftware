@@ -21,13 +21,11 @@ function Header() {
 
   return (
     <div>
-      <header
-        className={`min-h-20 flex mx-24 items-center ${
-          isScrolled ? "bg-blue" : "bg-transparent"
-        }`}
-      >
+      <header className="min-h-20 flex mx-24 items-center bg-transparent">
         <div className=" logo items-center  flex mx-24">
-          <img src={logo} alt="Logo" />
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <nav className=" flex  px-16 items-center w-full">
           <div>
@@ -67,8 +65,8 @@ function Header() {
                   location.pathname === "/team" ? "active" : ""
                 }`}
               >
-                <Link to="/team" style={{ color: "var(--primary-color)" }}>
-                  Team
+                <Link to="/blog" style={{ color: "var(--primary-color)" }}>
+                  Blog
                   <span className="line" />
                 </Link>
               </li>

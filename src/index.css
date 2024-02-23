@@ -300,5 +300,19 @@ li.active .line {
   background-size: cover;
   background-position: center;
   min-height: 40vh;
+  background-attachment: scroll;
+}
+
+.BlogImage {
+  background-image: url("../src//Components/Assets/Blog/BlogImage.jpg");
+  background-size: cover;
+  background-position: center;
+  max-height: 500px;
+  width: full;
   background-attachment: fixed;
+  z-index: -1;
+}
+
+.min-h-500 {
+  min-height: 400px;
 }
