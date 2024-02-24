@@ -24,7 +24,7 @@ function AboutUs() {
           <main>
             <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
               <div className="flex flex-grow items-center">
-                <div>
+                <div data-aos="zoom-in" data-aos-delay="300">
                   <img src={Like} alt="likeus" />
                 </div>
                 <div>
@@ -65,7 +65,10 @@ function AboutUs() {
             </div>
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 mb-12 max-w-screen-xl">
               <div className="grid grid-cols-3 gap-8">
-                <div className="flex flex-col text-center items-center justify-center">
+                <div
+                  className="flex flex-col text-center items-center justify-center"
+                  data-aos="zoom-in"
+                >
                   <div
                     className="rounded-full w-24 h-24 flex text-2xl font-bold text-white justify-center mb-4 items-center"
                     style={{ backgroundColor: "#01358d" }}
@@ -86,7 +89,10 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col text-center justify-center  items-center">
+                <div
+                  className="flex flex-col text-center justify-center  items-center"
+                  data-aos="zoom-in"
+                >
                   <div
                     className="rounded-full w-24 h-24 text-white mb-4 text-2xl font-bold flex justify-center items-center"
                     style={{ backgroundColor: "#9deed8" }}
@@ -106,7 +112,10 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col text-center justify-center items-center">
+                <div
+                  className="flex flex-col text-center justify-center items-center"
+                  data-aos="zoom-in"
+                >
                   <div
                     className="rounded-full w-24 h-24 flex text-white mb-4 text-2xl font-bold justify-center items-center"
                     style={{ backgroundColor: "#f9556d" }}
@@ -127,7 +136,10 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col text-center justify-center items-center">
+                <div
+                  className="flex flex-col text-center justify-center items-center"
+                  data-aos="zoom-in"
+                >
                   <div
                     className="rounded-full w-24 h-24 flex text-white text-2xl mb-4 font-bold justify-center items-center"
                     style={{ backgroundColor: "blue" }}
@@ -148,7 +160,11 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col text-center justify-center items-center">
+                <div
+                  className="flex flex-col text-center justify-center items-center"
+                  data-aos="zoom-in"
+                  data-a
+                >
                   <div
                     className="rounded-full w-24 h-24 flex text-white mb-4 text-2xl font-bold justify-center items-center"
                     style={{ backgroundColor: "orange" }}
@@ -169,7 +185,10 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col text-center justify-center items-center">
+                <div
+                  className="flex flex-col text-center justify-center items-center"
+                  data-aos="zoom-in"
+                >
                   <div
                     className="rounded-full w-24 h-24 flex text-white text-2xl mb-4 font-bold justify-center items-center"
                     style={{ backgroundColor: "green" }}

@@ -41,7 +41,7 @@ function Services() {
     },
   ];
   return (
-    <div clas>
+    <div>
       <Layout>
         <main>
           <div className="ServicesBack py-16 flex justify-center items-center text-center">
@@ -93,7 +93,10 @@ function Services() {
               </div>
               <div className="flex justify-center items-center gap-4">
                 <div>
-                  <div className="Servicefeature1 relative bottom-12 flex flex-col pb-12 p-8 rounded-lg bg-red-100">
+                  <div
+                    className="Servicefeature1 relative bottom-12 flex flex-col pb-12 p-8 rounded-lg bg-red-100"
+                    data-aos="zoom-in"
+                  >
                     <div>
                       <img src={Quality1} alt="" />
                     </div>
@@ -107,7 +110,11 @@ function Services() {
                       <p>Your Trust is our main focus</p>
                     </div>
                   </div>
-                  <div className="relative Servicefeature2 top-12 p-8 rounded-lg bg-pink-100">
+                  <div
+                    className="relative Servicefeature2 top-12 p-8 rounded-lg bg-pink-100"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                  >
                     <div>
                       <img src={Quality2} alt="" />
                     </div>
@@ -123,7 +130,10 @@ function Services() {
                   </div>
                   <div></div>
                 </div>
-                <div className="relative top-24 Servicefeature3 m-2  p-8 rounded-lg bg-pink-100">
+                <div
+                  className="relative top-24 Servicefeature3 m-2  p-8 rounded-lg bg-pink-100"
+                  data-aos="zoom-in"
+                >
                   <div>
                     <img src={Quality3} alt="" />
                   </div>
@@ -168,32 +178,6 @@ function Services() {
           <section style={{ backgroundColor: "#fef2f4" }}>
             <div className="mx-auto px-2 sm:px-6 lg:px-8 py-24 max-w-screen-xl">
               <div className="flex justify-between items-center ">
-                {/* <div className="ml-4">
-                  {section2.map((section2, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col justify-center items-center mb-6"
-                    >
-                      <div className="items-center">
-                        <h5
-                          className="text-2xl font-bold"
-                          style={{ color: "var(--primary-color)" }}
-                        >
-                          {section2.heading}
-                          <i
-                            className={`fa- ${section2.icon} text-3xl text-red-500 mb-2`}
-                          ></i>
-                        </h5>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: section2.paragraph,
-                          }}
-                        ></p>
-                      </div>
-                    </div>
-                  ))}
-                </div> */}
-                {/* Left Column */}
                 <div>
                   {sections.map((section, index) => (
                     <div key={index} className="flex flex-col  mb-6">

@@ -33,7 +33,7 @@ const MySwiper = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        autoplay={{ delay: 3000, reverseDirection: true }}
+        autoplay={{ delay: 3000 }}
         className="mySwiper"
         style={{ zIndex: 0, background: "none" }} // Set z-index here
       >

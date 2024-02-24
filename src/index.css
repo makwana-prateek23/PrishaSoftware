@@ -54,7 +54,20 @@ main {
 
 .header.scrolled {
   background-color: white;
-  animation: slideDown 1s ease forwards;
+  animation: slideDown 0.3s ease forwards;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.back-to-top-btn.show {
+  animation: bounce 1s ease infinite;
 }
 .footerLogo {
   width: 180px;
@@ -91,7 +104,9 @@ li.active .line {
   z-index: 0; /* Make sure it's lower than your footer */
   position: relative; /* Ensure proper stacking context */
 }
-
+.swiper-slide .swiper-slide-visible {
+  display: none !important;
+}
 /* Adjust the size of the Swiper slides */
 .swiper-slide {
   width: 160%;

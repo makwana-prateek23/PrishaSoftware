@@ -27,7 +27,7 @@ function ContactUs() {
                           style={{ color: "var(--text-color)" }}
                           className="mr-2 "
                         >
-                          <i class="fa-solid fa-location-dot"></i>
+                          <i className="fa-solid fa-location-dot"></i>
                         </span>
                         406/A, Forth Floor, Shivalay Complex,Mavdi Chowk, <br />
                         Mavdi Main Road, Mavdi, Rajkot, Gujarat 360004
@@ -37,7 +37,7 @@ function ContactUs() {
                           style={{ color: "var(--text-color)" }}
                           className="mr-2"
                         >
-                          <i class="fa-regular fa-clock"></i>
+                          <i className="fa-regular fa-clock"></i>
                         </span>
                         Monday - Saturday : 9am - 7pm
                       </li>
@@ -47,7 +47,7 @@ function ContactUs() {
                           style={{ color: "var(--text-color)" }}
                           className="mr-2 "
                         >
-                          <i class="fa-regular fa-envelope"></i>
+                          <i className="fa-regular fa-envelope"></i>
                         </span>
                         info@Prishasoftware.com
                       </li>
@@ -56,7 +56,7 @@ function ContactUs() {
                           style={{ color: "var(--text-color)" }}
                           className="mr-2 "
                         >
-                          <i class="fa-solid fa-phone"></i>
+                          <i className="fa-solid fa-phone"></i>
                         </span>
                         63536 51151
                       </li>

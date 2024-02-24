@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../Components/Assets/logo.png";
 import { Link } from "react-router-dom";
-import BackToTopButton from "./BackToBottom";
+import BackToTopButton from "./BackToTop";
 function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -11,8 +11,8 @@ function Footer() {
       style={{ backgroundColor: "#0d2753" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:px-8">
-        <div className=" grid grid-cols-1 md:grid-cols-4  gap-6">
-          <div className="flex flex-col ">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="flex flex-col">
             <div className="flex box-border bg-white mb-2 text-center rounded-md p-2 footerLogo">
               <img src={logo} alt="Company Logo" className="h-14" />
             </div>
@@ -92,7 +92,7 @@ function Footer() {
                 >
                   <i className="fa-regular fa-clock"></i>
                 </span>
-                Monday - Saturday : 9am - 7pm
+                Monday-Saturday : 9am-7pm
               </li>
               <li className="s">
                 {" "}
