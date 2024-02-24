@@ -58,7 +58,7 @@ function Home() {
                           boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
                         }}
                       >
-                        <Link to="/blog">Read More</Link>
+                        <Link to="/about">Read More</Link>
                       </button>
                     </div>
                   </div>
