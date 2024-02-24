@@ -50,7 +50,11 @@ function Home() {
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="flex justify-end">
-                    <div className="text-center mt-4">
+                    <div
+                      className="text-center mt-4"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <button
                         className="mx-2 my-4 text-white py-4 px-12 rounded-full font-semibold"
                         style={{
@@ -63,7 +67,11 @@ function Home() {
                     </div>
                   </div>
                   <div className="flex justify-start">
-                    <div className="mt-4">
+                    <div
+                      className="mt-4"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <button
                         className="mx-2 my-4 text-white py-4 px-12 rounded-full button-1"
                         style={{
@@ -78,7 +86,11 @@ function Home() {
                 </div>
               </div>
               <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-                <div className="flex justify-center">
+                <div
+                  className="flex justify-center"
+                  data-aos-delay="200"
+                  data-aos="zoom-in"
+                >
                   <MySwiper />
                 </div>
               </section>
@@ -213,11 +225,15 @@ function Home() {
                 </div>
               </div>
             </section>
-            <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-              {" "}
-              <div className="flex items-center px-12">
-                <div className="w-full  mt-8 items-center  p-12 ">
-                  {" "}
+            <section
+              className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl"
+              style={{ position: "relative" }}
+            >
+              <div className="flex items-center justify-between px-12">
+                <div
+                  className="w-1/2 mt-8 items-center p-12"
+                  data-aos="fade-right"
+                >
                   <h6 style={{ color: "var(--text-color)" }}>
                     This is to showcase the image 2
                   </h6>
@@ -225,7 +241,6 @@ function Home() {
                     className="text-6xl font-semibold mb-2"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    {" "}
                     Get the best quality <br />
                     Software{" "}
                     <span style={{ color: "var(--text-color)" }}>from us</span>
@@ -234,11 +249,15 @@ function Home() {
                     We provide best and optimized quality software
                   </p>
                 </div>
-                <div className="Image-Back w-full">
-                  <img src={ImageBack2} alt="image2" />
+                <div
+                  className="Image-Back w-1/2 bg-cover bg-center"
+                  data-aos="fade-left"
+                >
+                  <img src={ImageBack2} alt="image2" className="Image-Back " />
                 </div>
               </div>
             </section>
+
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
               {" "}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-1 justify-center">

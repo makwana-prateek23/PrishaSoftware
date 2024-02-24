@@ -1,24 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../Components/Assets/logo.png";
 // Import your CSS file
 
 function Header() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 500) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Get the current location
 
   return (
     <div>
-      <header className="min-h-20 flex mx-24 items-center bg-transparent">
-        <div className=" logo items-center  flex mx-24">
+      <header
+        className={`min-h-20 flex  items-center header transition-all duration-300  delay-200 ease-in-out ${
+          scrolled
+            ? "bg-white shadow-md fixed top-0 left-0 w-full z-50"
+            : "min-h-20 flex  items-center header "
+        }`}
+      >
+        <div className=" logo items-center  flex mx-8">
           <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
         </div>
-        <nav className=" flex  px-16 items-center w-full">
+        <nav className=" flex  px-16 justify-end items-center w-full">
           <div>
-            <ul className="flex mx-4 justify-evenly text-lg font-semibold items-center">
+            <ul className="flex mx-6 justify-center text-lg font-semibold items-center">
               <li
-                className={`relative mx-6 ${
+                className={`relative mx-8 ${
                   location.pathname === "/" ? "active" : ""
                 }`}
               >
@@ -28,7 +52,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-6 ${
+                className={`relative mx-8 ${
                   location.pathname === "/about" ? "active" : ""
                 }`}
               >
@@ -38,7 +62,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-6 ${
+                className={`relative mx-8 ${
                   location.pathname === "/services" ? "active" : ""
                 }`}
               >
@@ -48,7 +72,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-6 ${
+                className={`relative mx-8 ${
                   location.pathname === "/team" ? "active" : ""
                 }`}
               >
@@ -58,7 +82,7 @@ function Header() {
                 </Link>
               </li>
               <li
-                className={`relative mx-6 ${
+                className={`relative mx-8 ${
                   location.pathname === "/contact" ? "active" : ""
                 }`}
               >

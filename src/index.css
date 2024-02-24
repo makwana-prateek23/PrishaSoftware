@@ -226,7 +226,7 @@ li.active .line {
 }
 
 .logo {
-  width: 100px;
+  width: 250px;
   height: 100px;
 }
 .Circularbar {
@@ -315,4 +315,8 @@ li.active .line {
 
 .min-h-500 {
   min-height: 400px;
+}
+
+.Image-Back {
+  background-image: url("../src//Components/Assets/ImageBack.png");
 }
