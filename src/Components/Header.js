@@ -10,7 +10,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 500) {
+      if (offset > 400) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -23,14 +23,17 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Get the current location
-
+  useEffect(() => {
+    // Scroll to the top of the page when the route changes
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <div>
       <header
-        className={`min-h-20 flex  items-center header transition-all duration-300  delay-200 ease-in-out ${
+        className={`min-h-20 flex  items-center header  ${
           scrolled
-            ? "bg-white shadow-md fixed top-0 left-0 w-full z-50"
-            : "min-h-20 flex  items-center header "
+            ? "bg-white shadow-md fixed top-0 left-0 w-full z-50 scrolled"
+            : "min-h-20 flex  items-center "
         }`}
       >
         <div className=" logo items-center  flex mx-8">

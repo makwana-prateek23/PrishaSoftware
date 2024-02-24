@@ -38,6 +38,24 @@ main {
   min-height: 100%;
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.header {
+  background-color: transparent;
+  /* Other header styles */
+}
+
+.header.scrolled {
+  background-color: white;
+  animation: slideDown 1s ease forwards;
+}
 .footerLogo {
   width: 180px;
 }
