@@ -44,43 +44,32 @@ function Services() {
     <div>
       <Layout>
         <main>
-          <div className="ServicesBack py-16 flex justify-center items-center text-center">
+          <div className="ServicesBack  sm: pb-16 md:py-12 lg:py-16 xl:py-16 flex justify-center items-center text-center">
             <h2
-              className="text-7xl font-semibold"
+              className="text-5xl md:text-6xl lg:text-7xl font-semibold"
               style={{ color: "var(--primary-color)" }}
             >
               Our <span style={{ color: "var(--text-color)" }}>Services</span>
             </h2>
           </div>
-          <section className="Service-main mx-auto px-2 sm:px-6 lg:px-8 py-4 max-w-screen-xl">
-            <div className="flex justify-between items-center">
-              <div>
-                {" "}
-                <h6
-                  style={{ color: "var(--text-color)" }}
-                  className="text-lg mb-2"
-                >
-                  Our Expertise
-                </h6>
-                <h2
-                  className="text-5xl font-semibold mb-4"
-                  style={{ color: "var(--primary-color)" }}
-                >
-                  We have a wide range
-                  <br />
-                  of expertise <br />
-                  in different
-                  <span style={{ color: "var(--text-color)" }}> services</span>
+
+          <section className="Service-main mx-auto px-4 sm:px-6  lg:px-8 py-4 max-w-screen-xl">
+            <div className="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start">
+              <div className="md:w-1/2 md:mr-6">
+                <h6 className="text-lg text-text-color mb-2">Our Expertise</h6>
+                <h2 className="text-5xl font-semibold mb-4 text-primary-color">
+                  We have a wide range <br /> of expertise <br /> in different
+                  <span className="text-text-color"> services</span>
                 </h2>
                 <p className="text-2xl text-gray-400 mb-4">
-                  We provides you almost all the trending <br /> services in
-                  software field{" "}
+                  We provide almost all the trending <br /> services in the
+                  software field
                 </p>
-                <div className="grid grid-cols-2">
-                  <div className="">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
                     <ul>
                       <li>Web Services/Hosting</li>
-                      <li>Erp soution </li>
+                      <li>ERP solution</li>
                     </ul>
                   </div>
                   <div>
@@ -91,10 +80,10 @@ function Services() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center items-center gap-4">
-                <div>
+              <div className=" lg:flex justify-center items-center gap-4">
+                <div className=" my-2 mb-6  sm:mt-6">
                   <div
-                    className="Servicefeature1 relative bottom-12 flex flex-col pb-12 p-8 rounded-lg bg-red-100"
+                    className="Servicefeature1 relative  mb-6 px-4 lg:bottom-12 flex flex-col pb-12 p-8  rounded-lg bg-red-100"
                     data-aos="zoom-in"
                   >
                     <div>
@@ -111,7 +100,7 @@ function Services() {
                     </div>
                   </div>
                   <div
-                    className="relative Servicefeature2 top-12 p-8 rounded-lg bg-pink-100"
+                    className=" Servicefeature2  sm:flex flex-col lg:top-12 p-8 relative rounded-lg bg-pink-100"
                     data-aos="zoom-in"
                     data-aos-delay="200"
                   >
@@ -131,7 +120,7 @@ function Services() {
                   <div></div>
                 </div>
                 <div
-                  className="relative top-24 Servicefeature3 m-2  p-8 rounded-lg bg-pink-100"
+                  className="lg:relative top-24 Servicefeature3  sm:my-4 p-8 rounded-lg bg-pink-100"
                   data-aos="zoom-in"
                 >
                   <div>
@@ -147,7 +136,7 @@ function Services() {
                     <p>Your Trust is our main focus</p>
                   </div>
                 </div>
-              </div>
+              </div>{" "}
             </div>
           </section>
           <section>
@@ -155,32 +144,33 @@ function Services() {
               className="ServiceBack2"
               style={{ backgroundColor: "#053fa2" }}
             >
-              <div className="flex justify-center items-center py-16">
-                <div className="mx-12 text-center">
+              <div className="flex flex-col md:flex-row justify-center items-center py-16">
+                <div className="mx-4 md:mx-12 my-4 md:mb-0 text-center">
                   <Counter number={250} title={"Clients"} />
                 </div>
-                <div className="mx-12 text-center">
+                <div className="mx-4 md:mx-12 my-4 md:mb-0 text-center">
                   <Counter number={8} title={"Year of Experience"} />
                 </div>
-                <div className="mx-12 text-center">
+                <div className="mx-4 md:mx-12 my-4 md:mb-0 text-center">
                   <Counter
                     number={16}
-                    title={"featured Projects"}
+                    title={"Featured Projects"}
                     className="text-white"
                   />
                 </div>
-                <div className="mx-12 text-center">
+                <div className="mx-4 md:mx-12 my-4 md:mb-0 text-center">
                   <Counter number={12} title={"Multi Services"} />
                 </div>
               </div>
             </div>
           </section>
           <section style={{ backgroundColor: "#fef2f4" }}>
-            <div className="mx-auto px-2 sm:px-6 lg:px-8 py-24 max-w-screen-xl">
-              <div className="flex justify-between items-center ">
-                <div>
+            <div className="mx-auto px-4 sm:px-6 lg:px-8 py-24 max-w-screen-xl">
+              <div className="flex flex-col-reverse md:flex-row justify-between items-start ">
+                {/* Left Column */}
+                <div className="md:w-1/2 mb-8 md:mb-0">
                   {sections.map((section, index) => (
-                    <div key={index} className="flex flex-col  mb-6">
+                    <div key={index} className="flex flex-col mb-6">
                       <div className="mb-6 flex justify-between ">
                         <div style={{ flex: "1 1 50%" }}>
                           <h5
@@ -206,16 +196,20 @@ function Services() {
                 </div>
 
                 {/* Middle Column */}
-                <div className="mr-2">
-                  <img src={Serviceimage} alt="Serviceimage" />
+                <div className="mx-auto md:mr-12">
+                  <img
+                    src={Serviceimage}
+                    alt="Serviceimage"
+                    className="md:w-full"
+                  />
                 </div>
 
                 {/* Right Column */}
-                <div>
+                <div className="md:w-1/3">
                   {section2.map((section2, index) => (
                     <div
                       key={index}
-                      className="flex flex-col  mb-6"
+                      className="flex flex-col mb-6"
                       style={{ width: "180px" }}
                     >
                       <div className="mb-6 flex justify-between ">

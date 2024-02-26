@@ -5,7 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/swiper-bundle.css"; // Import Swiper styles
 import "swiper/css";
-// import { Pagination, Autoplay } from "swiper/modules";
+
 function AboutSwiper() {
   const [hoverIndex, setHoverIndex] = useState(-1);
 
@@ -41,8 +41,7 @@ function AboutSwiper() {
     <div className="about-swiper">
       <Swiper
         spaceBetween={4}
-        slidesPerView={3}
-        centeredSlides={true}
+        slidesPerView={1} // Display one slide per view
         loop={true}
         modules={[Autoplay]}
         autoplay={{ delay: 1000 }}

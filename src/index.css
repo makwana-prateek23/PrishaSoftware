@@ -152,15 +152,38 @@ li.active .line {
   border-radius: 10px !important;
 } */
 .swiper-container {
-  width: 110%; /* Adjust the width as needed */
+  width: 120%; /* Adjust the width as needed */
   height: 400px;
   padding-left: 12px;
   padding-right: 12px;
   margin-right: 12px;
   text-align: center;
+  display: flex;
+  align-items: center;
 
   /* Adjust the height as needed */
   /* Center the Swiper horizontally */
+}
+/* Responsive Styles */
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    height: 200px; /* Adjust the height for screens wider than 640px */
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    height: 200px; /* Adjust the height for screens wider than 768px */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-container {
+    height: 400px;
+    margin-top: 100px; /* Adjust the height for screens wider than 1024px */
+  }
 }
 .swiper-slide-shadow-prev,
 .swiper-slide-shadow-next {
@@ -199,21 +222,22 @@ li.active .line {
 .Quality-1 {
   position: relative;
   background-color: #9deed8;
-  height: 150px;
-  width: 150px;
-  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.2);
-  padding: 25px;
+  height: 12vw;
+  width: 12vw;
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
+  padding: 2vw;
   border-radius: 50%;
 }
+
 .Quality-2 {
   position: relative;
   background-color: #01358d;
   box-sizing: border-box;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.2);
-  padding: 25px;
+  height: 14vw;
+  width: 14vw;
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
+  padding: 2.5vw;
 }
 
 .Quality-3 {
@@ -221,12 +245,35 @@ li.active .line {
   background-color: #ee2852;
   box-sizing: border-box;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  box-shadow: 0 21px 21px 0 rgba(0, 0, 0, 0.2);
-  padding: 25px;
+  height: 12vw;
+  width: 12vw;
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
+  padding: 2vw;
 }
 
+@media screen and (max-width: 768px) {
+  .Quality-1 {
+    height: 20vw;
+    width: 20vw;
+    padding: 2vw;
+  }
+
+  .Quality-2 {
+    height: 25vw;
+    width: 25vw;
+    padding: 2vw;
+  }
+
+  .Quality-3 {
+    height: 20vw;
+    width: 20vw;
+    padding: 2vw;
+  }
+
+  .feature-2 {
+    bottom: 10vw;
+  }
+}
 .features {
   position: relative;
   width: 100%;
@@ -250,9 +297,10 @@ li.active .line {
   z-index: -1;
   /* Make sure the SVG is displayed as a block element */
 }
+
 .feature-2 {
   position: relative;
-  bottom: 60px;
+  bottom: 6vw;
 }
 
 .quality-text {
@@ -269,8 +317,9 @@ li.active .line {
 }
 
 .laptopImage {
-  width: 520px;
-  height: 520px;
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto; /* Allows the image to adjust its height while maintaining aspect ratio */
+  max-height: 100%; /* Ensures the image does not exceed the height of its container */
 }
 
 .email {
@@ -279,11 +328,10 @@ li.active .line {
   background-position: center;
 }
 
-.about-swiper {
-  width: 80%;
+.about-swiper .swiper-wrapper .swiper-about-slide img {
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: auto;
 }
 
 .swiper-about-slide img {
@@ -293,14 +341,42 @@ li.active .line {
   padding: 12px;
   align-items: center;
 }
+.swiper-about-slide {
+  display: flex;
+  justify-content: center;
+}
+.swiper
+  .swiper-initialized
+  .swiper-horizontal
+  .swiper-ios
+  .swiper-backface-hidden {
+  display: flex;
+  justify-content: center;
+  margin-left: 12px;
+}
 
 .ServicesBack {
   background-image: url("../src//Components/Assets/Services/ServicesBack.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 70vh;
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  height: 70vh; /* Set a minimum height to ensure the background image is visible */
   background-attachment: fixed;
+  /* Fix the background image to prevent scrolling */
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ServicesBack {
+    /* Adjust minimum height for smaller screens */
+    height: 100%;
+    width: 100%;
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center;
+    background-attachment: scroll; /* Change background attachment for smaller screens */
+  }
+}
+
+/* Responsive CSS */
 
 .Servicefeature1 {
   padding: 12px;

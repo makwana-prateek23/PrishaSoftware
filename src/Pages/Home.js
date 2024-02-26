@@ -23,13 +23,13 @@ function Home() {
       <div className="wrapper">
         <Layout>
           <main>
-            <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12  xl:py-24 max-w-screen-xl">
               <div className="py-12">
                 <div className="text-center">
                   {" "}
                   <div>
                     <h3
-                      className="text-6xl font-bold"
+                      className="text-3xl font-bold sm:text-2xl md:text-5xl lg:text-6xl xl:text-6xl"
                       style={{ color: "var(--primary-color)" }}
                     >
                       PrishaSoftware is a leading
@@ -43,15 +43,15 @@ function Home() {
                     </h3>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="flex justify-end">
+                <div className="grid grid-cols-1 sm:grid-cols-2 ">
+                  <div className="flex justify-center sm:justify-end">
                     <div
                       className="text-center mt-4"
                       data-aos="fade-up"
                       data-aos-delay="200"
                     >
                       <button
-                        className="mx-2 my-4 text-white py-4 px-12 rounded-full font-semibold"
+                        className="mx-2 my-4 text-white py-4 px-12 sm:px-12 rounded-full font-semibold"
                         style={{
                           backgroundColor: "var(--text-color)",
                           boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
@@ -61,9 +61,9 @@ function Home() {
                       </button>
                     </div>
                   </div>
-                  <div className="flex justify-start">
+                  <div className="flex justify-center sm:justify-start">
                     <div
-                      className="mt-4"
+                      className="mt-2"
                       data-aos="fade-up"
                       data-aos-delay="200"
                     >
@@ -80,9 +80,9 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
+              <section className="mx-auto px-4 sm:px-6 lg:px-8  sm:py-4 lg:py-8 md:py-6 xl:py-12 max-w-screen-xl">
                 <div
-                  className="flex justify-center"
+                  className="flex justify-center sm:justify-start md:justify-center lg:justify-center xl:justify-center"
                   data-aos-delay="200"
                   data-aos="zoom-in"
                 >
@@ -92,7 +92,7 @@ function Home() {
             </div>
             <section>
               <div className="features">
-                <div className="features-inner px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+                <div className="features-inner px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
                   <div
                     className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 px-4 sm:px-8 flex flex-col items-center"
                     data-aos-delay="200"
@@ -103,12 +103,12 @@ function Home() {
                     </div>
                     <div className="px-6 sm:px-12 mt-6 sm:mt-10 mb-3">
                       <h3
-                        className="text-2xl font-bold text-center"
+                        className="text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-center"
                         style={{ color: "var(--primary-color)" }}
                       >
                         Optimal choice
                       </h3>
-                      <p className="m-4 text-center">
+                      <p className="m-2 sm:m-4 text-sm sm:text-base md:text-base lg:text-base xl:text-base text-center">
                         Discover tailored software solutions. Our experts
                         evaluate the market, presenting optimal choices in
                         project management, CRM, ERP, and more.
@@ -125,12 +125,12 @@ function Home() {
                     </div>
                     <div className="px-6 sm:px-12 mt-6 sm:mt-10 mb-3">
                       <h3
-                        className="text-2xl font-bold text-center"
+                        className="text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-center"
                         style={{ color: "var(--primary-color)" }}
                       >
                         Finest quality
                       </h3>
-                      <p className="m-4 text-center">
+                      <p className="m-2 sm:m-4 text-sm sm:text-base md:text-base lg:text-base xl:text-base text-center">
                         Discover our software solutions renowned for their
                         exceptional quality and performance.
                       </p>
@@ -146,18 +146,19 @@ function Home() {
                     </div>
                     <div className="px-6 sm:px-12 mt-6 sm:mt-10 mb-3">
                       <h3
-                        className="text-2xl font-bold text-center"
+                        className="text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-center"
                         style={{ color: "var(--primary-color)" }}
                       >
                         Time saving
                       </h3>
-                      <p className="m-4 text-center">
+                      <p className="m-2 sm:m-4 text-sm sm:text-base md:text-base lg:text-base xl:text-base text-center">
                         Products designed to save time and provide exceptional
                         value to our customers.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="features-svg">
                   <svg
                     className="qodef-process-wave-line qodef-appeared"
@@ -219,87 +220,164 @@ function Home() {
               className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl"
               style={{ position: "relative" }}
             >
-              <div className="flex items-center justify-between px-12">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify-between py-12 px-6 sm:px-12 lg:px-16 xl:px-24">
                 <div
-                  className="w-1/2 mt-8 items-center p-12"
+                  className="w-full sm:w-1/2 mt-8 sm:mt-0 items-center sm:p-12"
                   data-aos="fade-right"
                 >
-                  <h6 style={{ color: "var(--text-color)" }}>
-                    This is to showcase the image 2
+                  <h6
+                    className="text-sm sm:text-base"
+                    style={{ color: "var(--text-color)" }}
+                  >
+                    We have optimised solutions for all kind of businesses
                   </h6>
                   <h2
-                    className="text-6xl font-semibold mb-2"
+                    className="text-3xl sm:text-6xl font-semibold mb-2"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    Get the best quality <br />
-                    Software{" "}
-                    <span style={{ color: "var(--text-color)" }}>from us</span>
+                    Get the optimised software solutions for <br />
+                    <span
+                      className="text-3xl sm:text-5xl"
+                      style={{ color: "var(--text-color)" }}
+                    >
+                      all business
+                    </span>
                   </h2>
-                  <p className="quality-text text-gray-400">
-                    We provide best and optimized quality software
+                  <p className="quality-text text-gray-400 text-sm sm:text-base">
+                    We can provide optmised tech solution for all kind solution
+                    in web and application in both areas
                   </p>
                 </div>
                 <div
-                  className="Image-Back w-1/2 bg-cover bg-center"
+                  className="w-full sm:w-1/2 bg-cover bg-center mt-6 sm:mt-0"
                   data-aos="fade-left"
                 >
-                  <img src={ImageBack2} alt="image2" className="Image-Back " />
+                  <img src={ImageBack2} alt="image2" className="w-full" />
                 </div>
               </div>
             </section>
 
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-              {" "}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-1 justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center">
                 <div className="flex flex-col items-center">
                   <div>
-                    <CircularProgressBar percentage={50} />{" "}
-                  </div>{" "}
-                  <div className="text-center p-8">
-                    <h6 className="text-2xl mb-2 font-semibold">Prosperity</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <CircularProgressBar percentage={50} />
+                  </div>
+                  <div className="text-center p-4">
+                    <h6 className="text-lg sm:text-xl font-semibold mb-2">
+                      Prosperity
+                    </h6>
+                    <p className="text-sm sm:text-base">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
                   <div>
-                    <CircularProgressBar percentage={60} />{" "}
-                  </div>{" "}
-                  <div className="text-center p-8">
-                    <h6 className="text-2xl mb-2 font-semibold">Prosperity</h6>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <CircularProgressBar percentage={60} />
+                  </div>
+                  <div className="text-center p-4">
+                    <h6 className="text-lg sm:text-xl font-semibold mb-2">
+                      Prosperity
+                    </h6>
+                    <p className="text-sm sm:text-base">
+                      Lorem ipsum dolor sit amet.
+                    </p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
                   <div>
-                    <CircularProgressBar percentage={40} />{" "}
-                  </div>{" "}
-                  <div className="text-center p-8">
-                    <h6 className="text-2xl mb-2 font-semibold">Prosperity</h6>
-                    <p>
+                    <CircularProgressBar percentage={40} />
+                  </div>
+                  <div className="text-center p-4">
+                    <h6 className="text-lg sm:text-xl font-semibold mb-2">
+                      Prosperity
+                    </h6>
+                    <p className="text-sm sm:text-base">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
                   <div>
-                    <CircularProgressBar percentage={80} />{" "}
-                  </div>{" "}
-                  <div className="text-center p-8">
-                    <h6 className="text-2xl mb-2 font-semibold">Prosperity</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <CircularProgressBar percentage={80} />
+                  </div>
+                  <div className="text-center p-4">
+                    <h6 className="text-lg sm:text-xl font-semibold mb-2">
+                      Prosperity
+                    </h6>
+                    <p className="text-sm sm:text-base">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
                   </div>
                 </div>
               </div>
             </section>
+
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
               <div
-                className="grid grid-cols-2 py-10"
+                className="grid grid-cols-1 sm:grid-cols-2 py-10"
                 style={{
                   backgroundImage: `url(${backimage})`,
                   backgroundPosition: "center",
+                  backgroundSize: "cover",
                 }}
               >
-                <div className="pl-12">
+                <div className="pl-4 sm:pl-12 mb-4">
+                  <div className="mb-6">
+                    <div className="flex flex-col mb-4">
+                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
+                        <p className="flex-1">Fast Forward Question ??</p>
+                        <button
+                          className="rounded-full w-8 h-8 bg-white"
+                          onClick={() => toggleQuestionVisibility(0)}
+                        >
+                          {questionVisible[0] ? "-" : "+"}
+                        </button>
+                      </div>
+                      {questionVisible[0] && (
+                        <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
+                          <p>Answer to Fast Forward Question</p>
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex flex-col mb-4">
+                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
+                        <p className="flex-1">Fast Forward Question ??</p>
+                        <button
+                          className="rounded-full w-8 h-8 bg-white"
+                          onClick={() => toggleQuestionVisibility(1)}
+                        >
+                          {questionVisible[1] ? "-" : "+"}
+                        </button>
+                      </div>
+                      {questionVisible[1] && (
+                        <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
+                          <p>Answer to Fast Forward Question</p>
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex flex-col mb-4">
+                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
+                        <p className="flex-1">Fast Forward Question ??</p>
+                        <button
+                          className="rounded-full w-8 h-8 bg-white"
+                          onClick={() => toggleQuestionVisibility(2)}
+                        >
+                          {questionVisible[2] ? "-" : "+"}
+                        </button>
+                      </div>
+                      {questionVisible[2] && (
+                        <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
+                          <p>Answer to Fast Forward Question</p>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Repeat the question and answer section for each question */}
+                  </div>
+                </div>
+                {/* <div className="pl-12">
                   <div className="flex h-1/6 justify-between items-center rounded-lg mb-2  bg-red-100 px-4 w-11/12">
                     <p>Fast Forward Question ??</p>
                     <button
@@ -345,29 +423,30 @@ function Home() {
                       <p>Answer to Fast Forward Question</p>
                     </div>
                   )}
-                </div>
-                <div className="">
-                  <h6 style={{ color: "var(--text-color)" }}>
+                </div> */}
+                <div className="py-4 sm:py-0 mb-4 px-4">
+                  <h6
+                    className="text-2xl sm:text-3xl mb-2"
+                    style={{ color: "var(--text-color)" }}
+                  >
                     Premium Quality Software
                   </h6>
                   <h3
-                    className="text-5xl font-bold mb-6"
+                    className="text-3xl sm:text-5xl font-bold mb-6"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    We provide premium
-                    <br /> quality{" "}
+                    We provide premium quality{" "}
                     <span style={{ color: "var(--text-color)" }}>
                       softwares
                     </span>
                   </h3>
-                  <p className="text-xl text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur
-                    <br />
-                    adipisicing elit. Perferendis placeat iure dolores.
+                  <p className="text-base sm:text-xl text-gray-400">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis placeat iure dolores.
                   </p>
-                  <div className=" mt-4">
+                  <div className="mt-4">
                     <button
-                      className="mx-2 my-4 text-white py-4 px-12 rounded-full font-semibold"
+                      className="mx-2 my-4 text-white py-4 px-8 sm:px-12 rounded-full font-semibold"
                       style={{
                         backgroundColor: "var(--text-color)",
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
@@ -380,29 +459,27 @@ function Home() {
               </div>
             </section>
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-              <div className="flex px-14 justify-center">
-                <div className="p-8">
+              <div className="flex flex-col md:flex-row items-center justify-center md:space-x-12">
+                <div className="p-8 text-center md:text-left">
                   <h6 style={{ color: "var(--text-color)" }}>
                     Premium Quality Software
                   </h6>
                   <h3
-                    className="text-5xl font-bold mb-6"
+                    className="text-3xl md:text-5xl font-bold mb-6"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    We provide premium
-                    <br /> quality{" "}
+                    We provide premium quality <br />
                     <span style={{ color: "var(--text-color)" }}>
                       softwares
                     </span>
                   </h3>
-                  <p className="text-xl text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur
-                    <br />
-                    adipisicing elit. Perferendis placeat iure dolores.
+                  <p className="text-base md:text-xl text-gray-400">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis placeat iure dolores.
                   </p>
-                  <div className=" mt-4">
+                  <div className="mt-4">
                     <button
-                      className="mx-2 my-4 text-white py-4 px-12 rounded-full font-semibold"
+                      className="mx-2 my-4 text-white py-4 px-8 md:px-12 rounded-full font-semibold"
                       style={{
                         backgroundColor: "var(--text-color)",
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
@@ -413,9 +490,13 @@ function Home() {
                   </div>
                 </div>
                 <div data-aos="fade-left" data-aos-delay="300">
-                  <img src={Laptop} className="laptopImage" alt="laptopimage" />
+                  <img
+                    src={Laptop}
+                    className="laptopImage"
+                    alt="laptopimage"
+                    style={{ maxWidth: "100%", height: "auto" }}
+                  />
                 </div>
-                <div></div>
               </div>
             </section>
           </main>
