@@ -92,6 +92,12 @@ li.active .line {
   transition: none; /* Override transition for the active link */
 }
 
+@media (max-width: 768px) {
+  li.active .line,
+  li:hover .line {
+    width: 100%;
+  }
+}
 .wrapper {
   background-image: url(./Components/Assets/h4-background-img-1.jpg);
   background-size: cover;
@@ -311,6 +317,15 @@ li.active .line {
   width: 250px;
   height: 100px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    width: 200px; /* Adjust width for smaller screens */
+    height: 80px; /* Adjust height for smaller screens */
+  }
+}
+
 .Circularbar {
   width: 180px;
   height: 18 0px;

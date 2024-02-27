@@ -6,10 +6,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      className="text-white pt-12  "
-      style={{ backgroundColor: "#0d2753" }}
-    >
+    <footer className="text-white pt-12" style={{ backgroundColor: "#0d2753" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="flex flex-col">
@@ -161,7 +158,7 @@ function Footer() {
       <div className="text-center py-8" style={{ backgroundColor: "#0a1f45" }}>
         Copyright ©{currentYear} Prisha Software Pvt Ltd. All rights reserved.
       </div>
-      <div className="fixed bottom-6 right-4 flex items-center justify-center bg-blue-100 rounded-full w-12 h-12">
+      <div className="fixed bottom-6 right-1 flex items-center justify-center bg-blue-100 rounded-full w-12 h-12">
         <BackToTopButton />
       </div>
     </footer>

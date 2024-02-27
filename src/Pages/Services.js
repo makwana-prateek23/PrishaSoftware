@@ -9,35 +9,41 @@ function Services() {
   const sections = [
     {
       icon: "fa-brands fa-rocketchat",
-      heading: "Amazing Support",
-      paragraph: "We Provide amazing <br> support to our clients",
+      heading: "Exceptional Support",
+      paragraph:
+        "Experience unparalleled customer support with our dedicated team, ensuring prompt assistance and resolution to all your queries and concerns.",
     },
     {
       icon: "fa-solid fa-chart-simple",
-      heading: "Amazing Suport",
-      paragraph: "We have a great record <br>in this business",
+      heading: "Proven Track Record",
+      paragraph:
+        "Benefit from our extensive experience and proven track record in delivering successful solutions, backed by a portfolio of satisfied clients and successful projects.",
     },
     {
       icon: "fa-solid fa-bullhorn",
-      heading: "Best Image",
-      paragraph: "Clients will have <br> great experience",
+      heading: "Optimized Performance",
+      paragraph:
+        "Elevate your business image with our cutting-edge software solutions, designed to enhance efficiency, productivity, and overall performance, providing your clients with an exceptional user experience.",
     },
   ];
   const section2 = [
     {
       icon: "fa-regular fa-star",
-      heading: "Best reviews",
-      paragraph: "We provide best <br>quality software",
+      heading: "Best Reviews",
+      paragraph:
+        "Our software has garnered top ratings and rave reviews from our satisfied clients, making us a trusted choice in the industry.",
     },
     {
       icon: "fa-solid fa-cloud-arrow-up",
       heading: "Cloud Support",
-      paragraph: "We also Provide cloud <br> support with our software",
+      paragraph:
+        "Experience seamless integration and scalability with our cloud support services, ensuring your software solutions are always accessible and adaptable to your growing needs.",
     },
     {
       icon: "fa-solid fa-sliders",
-      heading: "Connect Easily",
-      paragraph: "We also Provide   cloud support <br> with our software",
+      heading: "Easy Connectivity",
+      paragraph:
+        "Connect effortlessly with our software solutions, designed with user-friendly interfaces and streamlined processes to enhance productivity and collaboration within your organization.",
     },
   ];
   return (
@@ -53,7 +59,7 @@ function Services() {
             </h2>
           </div>
 
-          <section className="Service-main mx-auto px-4 sm:px-6  lg:px-8 py-4 max-w-screen-xl">
+          <section className="Service-main mx-auto px-4 sm:px-6 lg:px-8 py-4 max-w-screen-xl">
             <div className="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start">
               <div className="md:w-1/2 md:mr-6">
                 <h6 className="text-lg text-text-color mb-2">Our Expertise</h6>
@@ -166,12 +172,12 @@ function Services() {
           </section>
           <section style={{ backgroundColor: "#fef2f4" }}>
             <div className="mx-auto px-4 sm:px-6 lg:px-8 py-24 max-w-screen-xl">
-              <div className="flex flex-col-reverse md:flex-row justify-between items-start ">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Left Column */}
-                <div className="md:w-1/2 mb-8 md:mb-0">
+                <div className="md:col-span-1">
                   {sections.map((section, index) => (
                     <div key={index} className="flex flex-col mb-6">
-                      <div className="mb-6 flex justify-between ">
+                      <div className="mb-6 flex justify-between items-center">
                         <div style={{ flex: "1 1 50%" }}>
                           <h5
                             className="text-2xl ml-2 font-bold"
@@ -179,13 +185,9 @@ function Services() {
                           >
                             {section.heading}
                           </h5>
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html: section.paragraph,
-                            }}
-                          ></p>
+                          <p className="text-gray-400">{section.paragraph}</p>
                         </div>
-                        <div className="">
+                        <div>
                           <i
                             className={`fa- ${section.icon} text-3xl text-red-500 mb-2`}
                           ></i>
@@ -196,16 +198,16 @@ function Services() {
                 </div>
 
                 {/* Middle Column */}
-                <div className="mx-auto md:mr-12">
+                <div className="md:col-span-1">
                   <img
                     src={Serviceimage}
                     alt="Serviceimage"
-                    className="md:w-full"
+                    className="mx-auto md:w-full"
                   />
                 </div>
 
                 {/* Right Column */}
-                <div className="md:w-1/3">
+                <div className="md:col-span-1">
                   {section2.map((section2, index) => (
                     <div
                       key={index}
@@ -226,7 +228,7 @@ function Services() {
                             }}
                           ></p>
                         </div>
-                        <div className="">
+                        <div>
                           <i
                             className={`fa- ${section2.icon} text-3xl text-red-500 mb-2`}
                           ></i>

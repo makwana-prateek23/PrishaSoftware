@@ -41,7 +41,7 @@ function AboutSwiper() {
     <div className="about-swiper">
       <Swiper
         spaceBetween={4}
-        slidesPerView={1} // Display one slide per view
+        slidesPerView={3} // Display one slide per view
         loop={true}
         modules={[Autoplay]}
         autoplay={{ delay: 1000 }}

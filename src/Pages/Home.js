@@ -229,28 +229,31 @@ function Home() {
                     className="text-sm sm:text-base"
                     style={{ color: "var(--text-color)" }}
                   >
-                    We have optimised solutions for all kind of businesses
+                    Streamline Your Business with Optimized Solutions
                   </h6>
                   <h2
                     className="text-3xl sm:text-6xl font-semibold mb-2"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    Get the optimised software solutions for <br />
+                    Elevate Your Operations with <br />
                     <span
                       className="text-3xl sm:text-5xl"
                       style={{ color: "var(--text-color)" }}
                     >
-                      all business
+                      Optimized Software Solutions
                     </span>
                   </h2>
                   <p className="quality-text text-gray-400 text-sm sm:text-base">
-                    We can provide optmised tech solution for all kind solution
-                    in web and application in both areas
+                    We specialize in providing tailored tech solutions designed
+                    to optimize business processes across various industries.
+                    Whether you need web development, mobile apps, or custom
+                    software, we've got you covered.
                   </p>
                 </div>
                 <div
                   className="w-full sm:w-1/2 bg-cover bg-center mt-6 sm:mt-0"
                   data-aos="fade-left"
+                  data-aos-delay="200"
                 >
                   <img src={ImageBack2} alt="image2" className="w-full" />
                 </div>
@@ -267,9 +270,7 @@ function Home() {
                     <h6 className="text-lg sm:text-xl font-semibold mb-2">
                       Prosperity
                     </h6>
-                    <p className="text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet consectetur.
-                    </p>
+                    <p className="text-sm sm:text-base">We are available for</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
@@ -306,9 +307,7 @@ function Home() {
                     <h6 className="text-lg sm:text-xl font-semibold mb-2">
                       Prosperity
                     </h6>
-                    <p className="text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet consectetur.
-                    </p>
+                    <p className="text-sm sm:text-base">.</p>
                   </div>
                 </div>
               </div>
@@ -327,7 +326,9 @@ function Home() {
                   <div className="mb-6">
                     <div className="flex flex-col mb-4">
                       <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
-                        <p className="flex-1">Fast Forward Question ??</p>
+                        <p className="flex-1">
+                          What software solutions do you offer?
+                        </p>
                         <button
                           className="rounded-full w-8 h-8 bg-white"
                           onClick={() => toggleQuestionVisibility(0)}
@@ -337,13 +338,19 @@ function Home() {
                       </div>
                       {questionVisible[0] && (
                         <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
-                          <p>Answer to Fast Forward Question</p>
+                          <p>
+                            We offer a wide range of software solutions
+                            including web development, mobile app development,
+                            and custom software development.
+                          </p>
                         </div>
                       )}
                     </div>
                     <div className="flex flex-col mb-4">
                       <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
-                        <p className="flex-1">Fast Forward Question ??</p>
+                        <p className="flex-1">
+                          Do you provide ongoing support and maintenance?
+                        </p>
                         <button
                           className="rounded-full w-8 h-8 bg-white"
                           onClick={() => toggleQuestionVisibility(1)}
@@ -353,13 +360,20 @@ function Home() {
                       </div>
                       {questionVisible[1] && (
                         <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
-                          <p>Answer to Fast Forward Question</p>
+                          <p>
+                            Yes, we offer comprehensive support and maintenance
+                            services to ensure the smooth functioning of your
+                            software solutions.
+                          </p>
                         </div>
                       )}
                     </div>
                     <div className="flex flex-col mb-4">
                       <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
-                        <p className="flex-1">Fast Forward Question ??</p>
+                        <p className="flex-1">
+                          Can you develop software tailored to our specific
+                          needs?
+                        </p>
                         <button
                           className="rounded-full w-8 h-8 bg-white"
                           onClick={() => toggleQuestionVisibility(2)}
@@ -369,7 +383,11 @@ function Home() {
                       </div>
                       {questionVisible[2] && (
                         <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
-                          <p>Answer to Fast Forward Question</p>
+                          <p>
+                            Yes, we specialize in developing custom software
+                            solutions tailored to the unique requirements of
+                            each client.
+                          </p>
                         </div>
                       )}
                     </div>
@@ -377,72 +395,25 @@ function Home() {
                     {/* Repeat the question and answer section for each question */}
                   </div>
                 </div>
-                {/* <div className="pl-12">
-                  <div className="flex h-1/6 justify-between items-center rounded-lg mb-2  bg-red-100 px-4 w-11/12">
-                    <p>Fast Forward Question ??</p>
-                    <button
-                      className="rounded-full w-8 h-8 bg-white"
-                      onClick={() => toggleQuestionVisibility(0)}
-                    >
-                      {" "}
-                      {questionVisible[0] ? "-" : "+"}
-                    </button>
-                  </div>
-                  {questionVisible[0] && (
-                    <div className="bg-green-100 rounded-lg p-4 mb-2 w-8/12">
-                      <p>Answer to Fast Forward Question</p>
-                    </div>
-                  )}
 
-                  <div className="flex h-1/6 justify-between items-center rounded-lg mb-2 bg-red-100 px-4 w-11/12">
-                    <p>Fast Forward Question ??</p>
-                    <button
-                      className="rounded-full w-8 h-8 bg-white"
-                      onClick={() => toggleQuestionVisibility(1)}
-                    >
-                      {questionVisible[1] ? "-" : "+"}
-                    </button>
-                  </div>
-                  {questionVisible[1] && (
-                    <div className="bg-green-100 rounded-lg p-4 mb-2 w-8/12">
-                      <p>Answer to Fast Forward Question</p>
-                    </div>
-                  )}
-
-                  <div className="flex h-1/6 justify-between items-center rounded-lg mb-2 bg-red-100 px-4 w-11/12">
-                    <p>Fast Forward Question ??</p>
-                    <button
-                      className="rounded-full w-8 h-8 bg-white"
-                      onClick={() => toggleQuestionVisibility(2)}
-                    >
-                      {questionVisible[2] ? "-" : "+"}
-                    </button>
-                  </div>
-                  {questionVisible[2] && (
-                    <div className="bg-green-100 p-4 rounded-lg mb-2 w-8/12 transition-all duration-1500 transform translate-y-0">
-                      <p>Answer to Fast Forward Question</p>
-                    </div>
-                  )}
-                </div> */}
                 <div className="py-4 sm:py-0 mb-4 px-4">
                   <h6
                     className="text-2xl sm:text-3xl mb-2"
                     style={{ color: "var(--text-color)" }}
                   >
-                    Premium Quality Software
+                    Transform Your Business with Innovative Software Solutions
                   </h6>
                   <h3
                     className="text-3xl sm:text-5xl font-bold mb-6"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    We provide premium quality{" "}
-                    <span style={{ color: "var(--text-color)" }}>
-                      softwares
-                    </span>
+                    Empower Your Enterprise with Our Cutting-Edge Software
                   </h3>
                   <p className="text-base sm:text-xl text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis placeat iure dolores.
+                    Our software solutions are designed to revolutionize your
+                    business operations. From streamlining processes to
+                    enhancing efficiency, we offer transformative software
+                    services that propel your enterprise forward.
                   </p>
                   <div className="mt-4">
                     <button
@@ -460,22 +431,26 @@ function Home() {
             </section>
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
               <div className="flex flex-col md:flex-row items-center justify-center md:space-x-12">
-                <div className="p-8 text-center md:text-left">
+                <div className="p-8 text-center md:text-left md:w-1/2">
                   <h6 style={{ color: "var(--text-color)" }}>
-                    Premium Quality Software
+                    Cutting-Edge Software Solutions
                   </h6>
                   <h3
                     className="text-3xl md:text-5xl font-bold mb-6"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    We provide premium quality <br />
+                    Elevate Your Business with <br />
                     <span style={{ color: "var(--text-color)" }}>
-                      softwares
+                      Premium Software
+                      <br /> Solutions
                     </span>
                   </h3>
                   <p className="text-base md:text-xl text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis placeat iure dolores.
+                    We specialize in delivering innovative and top-notch
+                    software solutions tailored to meet the unique needs of your
+                    business. From web applications to mobile apps,
+                    <br /> we provide cutting-edge technology solutions that
+                    drive growth and success.
                   </p>
                   <div className="mt-4">
                     <button
@@ -485,16 +460,20 @@ function Home() {
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
                       }}
                     >
-                      <Link to="/contact">Read More</Link>
+                      <Link to="/contact">Learn More</Link>
                     </button>
                   </div>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="300">
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  className="md:w-1/2"
+                >
                   <img
                     src={Laptop}
                     className="laptopImage"
                     alt="laptopimage"
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
               </div>

@@ -18,7 +18,7 @@ const MySwiper = () => {
     <div className="swiper-container">
       <Swiper
         spaceBetween={-10}
-        slidesPerView={"3"}
+        slidesPerView={"2"}
         effect={"coverflow"}
         centeredSlides={true}
         grabCursor={true}

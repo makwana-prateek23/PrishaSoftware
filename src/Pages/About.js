@@ -23,7 +23,7 @@ function AboutUs() {
         <div>
           <main>
             <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-              <div className="flex flex-col sm:flex-row items-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-12">
                 <div
                   data-aos="zoom-in"
                   data-aos-delay="300"
@@ -34,22 +34,21 @@ function AboutUs() {
                 <div>
                   <div className="">
                     <h6 style={{ color: "var(--text-color)" }}>
-                      Premium Quality Software
+                      Tailored Software Solutions
                     </h6>
                     <h3
                       className="text-3xl sm:text-5xl font-bold mb-6"
                       style={{ color: "var(--primary-color)" }}
                     >
-                      We provide premium
-                      <br /> quality{" "}
-                      <span style={{ color: "var(--text-color)" }}>
-                        softwares
-                      </span>
+                      Elevate Your Business with
+                      <br /> Custom Software Solutions
                     </h3>
-                    <p className="text-base sm:text-xl text-gray-400">
-                      Lorem ipsum dolor sit amet consectetur
-                      <br />
-                      adipisicing elit. Perferendis placeat iure dolores.
+                    <p className="text-sm sm:text-xl text-gray-400">
+                      Our mission is to provide tailored software solutions that
+                      empower businesses to achieve their goals. With our
+                      expertise in cutting-edge technologies and commitment to
+                      quality, we deliver premium software solutions customized
+                      to meet the unique needs of your business.
                     </p>
                     <div className="mt-4">
                       <button
@@ -84,17 +83,15 @@ function AboutUs() {
                       style={{ color: "#01358d" }}
                       className="text-2xl font-semibold mb-2"
                     >
-                      Great Design
+                      Innovative Design
                     </h6>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Esse dicta impedit similique!
+                      Award-winning designs that captivate and engage users.
                     </p>
                   </div>
                 </div>
-
                 <div
-                  className="flex flex-col text-center justify-center  items-center"
+                  className="flex flex-col text-center justify-center items-center"
                   data-aos="zoom-in"
                 >
                   <div
@@ -108,11 +105,11 @@ function AboutUs() {
                       style={{ color: "#01358d" }}
                       className="text-2xl font-semibold mb-4"
                     >
-                      Optimal choice
+                      Optimal Solutions
                     </h6>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur
-                      <br /> adipisicing elit. Esse dicta impedit similique!
+                      Customized solutions tailored to meet your unique business
+                      needs.
                     </p>
                   </div>
                 </div>
@@ -124,7 +121,6 @@ function AboutUs() {
                     className="rounded-full w-24 h-24 flex text-white mb-4 text-2xl font-bold justify-center items-center"
                     style={{ backgroundColor: "#f9556d" }}
                   >
-                    {" "}
                     3
                   </div>
                   <div>
@@ -132,11 +128,11 @@ function AboutUs() {
                       style={{ color: "#01358d" }}
                       className="text-2xl font-semibold mb-4"
                     >
-                      Finest Quality
+                      Top-Quality Development
                     </h6>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur <br />
-                      adipisicing elit. Esse dicta impedit similique!
+                      Highly skilled developers delivering flawless, efficient
+                      code.
                     </p>
                   </div>
                 </div>
@@ -148,7 +144,6 @@ function AboutUs() {
                     className="rounded-full w-24 h-24 flex text-white text-2xl mb-4 font-bold justify-center items-center"
                     style={{ backgroundColor: "blue" }}
                   >
-                    {" "}
                     4
                   </div>
                   <div>
@@ -156,24 +151,22 @@ function AboutUs() {
                       style={{ color: "#01358d" }}
                       className="text-2xl font-semibold mb-4"
                     >
-                      Premium Service
+                      Exceptional Service
                     </h6>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur <br />
-                      adipisicing elit. Esse dicta impedit similique!
+                      Dedicated support team providing prompt and reliable
+                      assistance.
                     </p>
                   </div>
                 </div>
                 <div
                   className="flex flex-col text-center justify-center items-center"
                   data-aos="zoom-in"
-                  data-a
                 >
                   <div
                     className="rounded-full w-24 h-24 flex text-white mb-4 text-2xl font-bold justify-center items-center"
                     style={{ backgroundColor: "orange" }}
                   >
-                    {" "}
                     5
                   </div>
                   <div>
@@ -181,11 +174,11 @@ function AboutUs() {
                       style={{ color: "#01358d" }}
                       className="text-2xl font-semibold mb-4"
                     >
-                      Affordable Price
+                      Affordable Pricing
                     </h6>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur <br />
-                      adipisicing elit. Esse dicta impedit similique!
+                      Competitive pricing plans to fit any budget without
+                      compromising quality.
                     </p>
                   </div>
                 </div>
@@ -197,7 +190,7 @@ function AboutUs() {
                     className="rounded-full w-24 h-24 flex text-white text-2xl mb-4 font-bold justify-center items-center"
                     style={{ backgroundColor: "green" }}
                   >
-                    6{" "}
+                    6
                   </div>
                   <div>
                     <h6
@@ -207,13 +200,14 @@ function AboutUs() {
                       24/7 Support
                     </h6>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur <br />
-                      adipisicing elit. Esse dicta impedit similique!
+                      Round-the-clock assistance ensuring uninterrupted service
+                      and peace of mind.
                     </p>
                   </div>
                 </div>
               </div>
             </section>
+
             <section className="email">
               <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
                 <div className="flex flex-col justify-center items-center">
