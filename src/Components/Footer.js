@@ -124,7 +124,7 @@ function Footer() {
                 <Link to="/contact">Contact-us</Link>
               </li>
               <li>
-                <Link>Portfolio</Link>
+                <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
                 <Link>Services</Link>

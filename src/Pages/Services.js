@@ -63,9 +63,12 @@ function Services() {
             <div className="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start">
               <div className="md:w-1/2 md:mr-6">
                 <h6 className="text-lg text-text-color mb-2">Our Expertise</h6>
-                <h2 className="text-5xl font-semibold mb-4 text-primary-color">
+                <h2
+                  className="text-5xl font-semibold mb-4 "
+                  style={{ color: "var(--primary-color)" }}
+                >
                   We have a wide range <br /> of expertise <br /> in different
-                  <span className="text-text-color"> services</span>
+                  <span className=""> services</span>
                 </h2>
                 <p className="text-2xl text-gray-400 mb-4">
                   We provide almost all the trending <br /> services in the

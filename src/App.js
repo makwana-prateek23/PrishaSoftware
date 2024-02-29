@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactUs from "./Pages/ContactUs";
 import Blog from "./Pages/Blog";
+import Privacy from "./Pages/Privacy";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </Router>
       {/* <MYSwiper /> */}
