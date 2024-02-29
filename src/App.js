@@ -23,10 +23,13 @@ function App() {
     <div className="App">
       <Helmet>
         <meta charSet="utf-8" />
-
         <meta
           name="description"
           content="Prisha Software provides innovative software solutions for businesses."
+        />
+        <meta
+          name="keywords"
+          content="Prisha Software, Software Company, Reactjs, PHP, Services, Web Services ,Web development ,Accounting Software, ERP Solution , Web Hosting, Digital LandScape , AcccountDigital, 24/7 Support"
         />
       </Helmet>
       <Router>
