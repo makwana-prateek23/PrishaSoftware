@@ -220,21 +220,21 @@ function AboutUs() {
                     <span style={{ color: "var(--text-color)" }}>touch</span>
                   </h3>
                   <p className="text-white text-2xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci deserunt voluptates similique error?
+                    Have questions or inquiries? Reach out to us today. Our team
+                    is here to assist you.
                   </p>
                   <div className="my-12 md:w-8/12 lg:w-6/12 xl:w-4/12 rounded-3xl flex flex-col md:flex-row justify-between cursor-pointer items-center h-auto md:h-14">
                     <input
                       type="text"
-                      placeholder="Email"
+                      placeholder="Your Email"
                       className="w-full md:w-10/12 bg-white rounded-3xl h-12 px-4 cursor-pointer outline-none mb-4 md:mb-0 md:mr-2"
                     />
                     <div>
                       <button
-                        className="rounded-3xl h-12 px-4 text-white"
+                        className="rounded-3xl h-12 px-6 text-white"
                         style={{ backgroundColor: "#f9556d" }}
                       >
-                        Send Now
+                        Send Message
                       </button>
                     </div>
                   </div>
@@ -255,23 +255,23 @@ function AboutUs() {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 md:pr-8">
                   <h6 style={{ color: "var(--text-color)" }}>
-                    Prisha Software
+                    About Prisha Software
                   </h6>
                   <h3
                     className="text-5xl font-bold mb-4"
                     style={{ color: "#01358d" }}
                   >
-                    Our Vision is to make <br /> a Digital{" "}
-                    <span style={{ color: "var(--text-color)" }}>
-                      Revolution
-                    </span>
+                    Revolutionizing the Digital Landscape
                   </h3>
                   <p className="text-gray-400 text-2xl">
-                    Lorem ipsum dolor sit amet consectetur <br />
-                    adipisicing elit. Adipisci deserunt voluptates similique
-                    error?
+                    Prisha Software is committed to pioneering digital
+                    transformation through innovative solutions. Our goal is to
+                    redefine the digital landscape and empower businesses to
+                    achieve their full potential. Join us in shaping the future
+                    of technology.
                   </p>
                 </div>
+
                 <div className="md:w-1/2 mt-8 md:mt-0">
                   <div className="flex flex-col space-y-4">
                     <div className="flex justify-between">

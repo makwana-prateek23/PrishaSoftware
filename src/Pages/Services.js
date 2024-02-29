@@ -86,10 +86,10 @@ function Services() {
                   </div>
                 </div>
               </div>
-              <div className=" lg:flex justify-center items-center gap-4">
-                <div className=" my-2 mb-6  sm:mt-6">
+              <div className="lg:flex justify-center items-center gap-4">
+                <div className="my-2 mb-6 sm:mt-6">
                   <div
-                    className="Servicefeature1 relative  mb-6 px-4 lg:bottom-12 flex flex-col pb-12 p-8  rounded-lg bg-red-100"
+                    className="Servicefeature1 relative mb-6 px-4 lg:bottom-12 flex flex-col pb-12 p-8 rounded-lg bg-red-100"
                     data-aos="zoom-in"
                   >
                     <div>
@@ -102,11 +102,17 @@ function Services() {
                       >
                         Innovative Thinking
                       </h3>
-                      <p>Your Trust is our main focus</p>
+                      <p>
+                        We pride ourselves on innovative thinking, always
+                        striving to bring fresh ideas to the table to meet your
+                        unique needs and challenges. Your trust is the
+                        foundation of our commitment to delivering
+                        groundbreaking solutions that exceed your expectations.
+                      </p>
                     </div>
                   </div>
                   <div
-                    className=" Servicefeature2  sm:flex flex-col lg:top-12 p-8 relative rounded-lg bg-pink-100"
+                    className="Servicefeature2 sm:flex flex-col lg:top-12 p-8 relative rounded-lg bg-pink-100"
                     data-aos="zoom-in"
                     data-aos-delay="200"
                   >
@@ -120,13 +126,18 @@ function Services() {
                       >
                         Best Quality
                       </h3>
-                      <p>Your Trust is our main focus</p>
+                      <p>
+                        Our dedication to excellence ensures that we
+                        consistently deliver the highest quality products and
+                        services. With meticulous attention to detail and a
+                        commitment to perfection, we guarantee your complete
+                        satisfaction every step of the way.
+                      </p>
                     </div>
                   </div>
-                  <div></div>
                 </div>
                 <div
-                  className="lg:relative top-24 Servicefeature3  sm:my-4 p-8 rounded-lg bg-pink-100"
+                  className="lg:relative top-24 Servicefeature3 sm:my-4 p-8 rounded-lg bg-pink-100"
                   data-aos="zoom-in"
                 >
                   <div>
@@ -139,10 +150,15 @@ function Services() {
                     >
                       Data Security
                     </h3>
-                    <p>Your Trust is our main focus</p>
+                    <p>
+                      Rest easy knowing that your sensitive data is safeguarded
+                      by state-of-the-art security measures. Our comprehensive
+                      approach to data security ensures that your information
+                      remains protected from any potential threats or breaches.
+                    </p>
                   </div>
                 </div>
-              </div>{" "}
+              </div>
             </div>
           </section>
           <section>
@@ -174,10 +190,10 @@ function Services() {
             <div className="mx-auto px-4 sm:px-6 lg:px-8 py-24 max-w-screen-xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Left Column */}
-                <div className="md:col-span-1">
+                <div className="md:col-span-1 py-24">
                   {sections.map((section, index) => (
                     <div key={index} className="flex flex-col mb-6">
-                      <div className="mb-6 flex justify-between items-center">
+                      <div className="mb-6 flex justify-between">
                         <div style={{ flex: "1 1 50%" }}>
                           <h5
                             className="text-2xl ml-2 font-bold"
@@ -207,14 +223,10 @@ function Services() {
                 </div>
 
                 {/* Right Column */}
-                <div className="md:col-span-1">
+                <div className="md:col-span-1 py-24">
                   {section2.map((section2, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col mb-6"
-                      style={{ width: "180px" }}
-                    >
-                      <div className="mb-6 flex justify-between ">
+                    <div key={index} className="flex flex-col mb-6 ">
+                      <div className="mb-6 flex justify-between  ">
                         <div style={{ flex: "1 1 50%" }}>
                           <h5
                             className="text-2xl ml-3 font-bold"
@@ -222,11 +234,7 @@ function Services() {
                           >
                             {section2.heading}
                           </h5>
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html: section2.paragraph,
-                            }}
-                          ></p>
+                          <p className="text-gray-400"> {section2.paragraph}</p>
                         </div>
                         <div>
                           <i

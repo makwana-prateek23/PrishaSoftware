@@ -24,7 +24,7 @@ function Home() {
         <Layout>
           <main>
             <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12  xl:py-24 max-w-screen-xl">
-              <div className="py-12">
+              <div className="py-12 sm:py-8">
                 <div className="text-center">
                   {" "}
                   <div>
@@ -92,7 +92,7 @@ function Home() {
             </div>
             <section>
               <div className="features">
-                <div className="features-inner px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
+                <div className="features-inner px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 mx-4 sm:mx-6 md:mx-8 my-8 lg:mx-12 xl:mx-24 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
                   <div
                     className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 px-4 sm:px-8 flex flex-col items-center"
                     data-aos-delay="200"
@@ -220,30 +220,30 @@ function Home() {
               className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl"
               style={{ position: "relative" }}
             >
-              <div className="flex flex-col-reverse sm:flex-row items-center justify-between py-12 px-6 sm:px-12 lg:px-16 xl:px-24">
+              <div className="flex flex-col-reverse sm:flex-col  md:flex-col lg:flex-row items-center justify-between py-12 px-6 sm:px-12 lg:px-16 xl:px-24">
                 <div
-                  className="w-full sm:w-1/2 mt-8 sm:mt-0 items-center sm:p-12"
+                  className="w-full sm:w-full md:w-full lg:w-1/2 mt-8 sm:mt-0 items-center sm:p-12"
                   data-aos="fade-right"
                 >
                   <h6
-                    className="text-sm sm:text-base"
+                    className="text-sm sm:text-base md:text-base lg:text-xl"
                     style={{ color: "var(--text-color)" }}
                   >
                     Streamline Your Business with Optimized Solutions
                   </h6>
                   <h2
-                    className="text-3xl sm:text-6xl font-semibold mb-2"
+                    className="text-3xl sm:text-4xl md:text=5xl lg:text-6xl font-semibold mb-2"
                     style={{ color: "var(--primary-color)" }}
                   >
                     Elevate Your Operations with <br />
                     <span
-                      className="text-3xl sm:text-5xl"
+                      className="text-3xl sm:text-2xl"
                       style={{ color: "var(--text-color)" }}
                     >
                       Optimized Software Solutions
                     </span>
                   </h2>
-                  <p className="quality-text text-gray-400 text-sm sm:text-base">
+                  <p className="quality-text text-gray-400 text-sm sm:text-base md:text-2xl">
                     We specialize in providing tailored tech solutions designed
                     to optimize business processes across various industries.
                     Whether you need web development, mobile apps, or custom
@@ -261,53 +261,67 @@ function Home() {
             </section>
 
             <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+                {/* Quality 1 */}
                 <div className="flex flex-col items-center">
                   <div>
-                    <CircularProgressBar percentage={50} />
+                    <CircularProgressBar percentage={90} />
                   </div>
                   <div className="text-center p-4">
                     <h6 className="text-lg sm:text-xl font-semibold mb-2">
-                      Prosperity
-                    </h6>
-                    <p className="text-sm sm:text-base">We are available for</p>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div>
-                    <CircularProgressBar percentage={60} />
-                  </div>
-                  <div className="text-center p-4">
-                    <h6 className="text-lg sm:text-xl font-semibold mb-2">
-                      Prosperity
+                      User-Centric Design
                     </h6>
                     <p className="text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet.
+                      Intuitive and user-friendly interfaces tailored to meet
+                      user needs.
                     </p>
                   </div>
                 </div>
+
+                {/* Quality 2 */}
                 <div className="flex flex-col items-center">
                   <div>
-                    <CircularProgressBar percentage={40} />
+                    <CircularProgressBar percentage={85} />
                   </div>
                   <div className="text-center p-4">
                     <h6 className="text-lg sm:text-xl font-semibold mb-2">
-                      Prosperity
+                      Scalability
                     </h6>
                     <p className="text-sm sm:text-base">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Built with scalability in mind to grow alongside your
+                      business.
                     </p>
                   </div>
                 </div>
+
+                {/* Quality 3 */}
+                <div className="flex flex-col items-center">
+                  <div>
+                    <CircularProgressBar percentage={95} />
+                  </div>
+                  <div className="text-center p-4">
+                    <h6 className="text-lg sm:text-xl font-semibold mb-2">
+                      Reliability
+                    </h6>
+                    <p className="text-sm sm:text-base">
+                      Reliable and robust solutions ensuring uninterrupted
+                      operations.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Quality 4 */}
                 <div className="flex flex-col items-center">
                   <div>
                     <CircularProgressBar percentage={80} />
                   </div>
                   <div className="text-center p-4">
                     <h6 className="text-lg sm:text-xl font-semibold mb-2">
-                      Prosperity
+                      Security
                     </h6>
-                    <p className="text-sm sm:text-base">.</p>
+                    <p className="text-sm sm:text-base">
+                      High-level security measures to protect sensitive data.
+                    </p>
                   </div>
                 </div>
               </div>

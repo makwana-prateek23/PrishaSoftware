@@ -80,7 +80,7 @@ function ContactUs() {
                 </div>
 
                 <div className="w-full md:w-1/2 p-4 md:p-8">
-                  <div className="h-11/12 md:h-auto">
+                  <div className="h-11/12 md:h-full sm:h-6/12">
                     <iframe
                       title="CompanyAdress"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.794371775465!2d70.7792603805802!3d22.258078726495796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca591345423d%3A0x4d97ae911e8f6828!2sPrisha%20Software%20Private%20Limited!5e0!3m2!1sen!2sin!4v1708406172814!5m2!1sen!2sin"

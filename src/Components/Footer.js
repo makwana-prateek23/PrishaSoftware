@@ -7,19 +7,17 @@ function Footer() {
 
   return (
     <footer className="text-white pt-12" style={{ backgroundColor: "#0d2753" }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div className="flex flex-col">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 py-12 lg:px-8">
+        <div className="sm:grid grid-cols-1  md:grid-cols-4 gap-6">
+          <div className="flex flex-col w-full  justify-center items-center my-2 sm:px-6 md:px-4 ">
             <div className="flex box-border bg-white mb-2 text-center rounded-md p-2 footerLogo">
               <img src={logo} alt="Company Logo" className="h-14" />
             </div>
-            <div>
-              <p className="mb-4">
-                We are providing premium quality Services and Softwares.
-              </p>
-            </div>
+            <p className="mb-4 ">
+              We are providing premium quality Services and Softwares.
+            </p>
             <div className="flex items-center">
-              <ul className="flex w-full">
+              <ul className="flex px-4">
                 <li className="mr-4">
                   <a
                     href="https://www.facebook.com"
@@ -66,13 +64,11 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col sm:justify-center items-center">
             <div>
-              <h4 className="text-2xl font-semibold pb-2 text-center">
-                Contact Info
-              </h4>
+              <h4 className="text-2xl font-semibold pb-2 ">Contact Info</h4>
             </div>
-            <ul>
+            <ul className="">
               <li className="">
                 <span style={{ color: "var(--text-color)" }} className="mr-2 ">
                   <i className="fa-solid fa-location-dot"></i>
@@ -112,46 +108,45 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full">
-            <div className="flex flex-col justify-center items-center ">
-              <h4 className="text-2xl font-semibold pb-2 text-center">Pages</h4>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About-us</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact-us</Link>
-                </li>
-                <li>
-                  <Link>Portfolio</Link>
-                </li>
-                <li>
-                  <Link>Services</Link>
-                </li>
-                <li>
-                  <Link>Our Team</Link>
-                </li>
-              </ul>
+
+          <div className="flex flex-col items-center justify-center w-full  ">
+            <div>
+              <h4 className="text-2xl font-semibold pb-2">Pages</h4>
             </div>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About-us</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact-us</Link>
+              </li>
+              <li>
+                <Link>Portfolio</Link>
+              </li>
+              <li>
+                <Link>Services</Link>
+              </li>
+              <li>
+                <Link>Our Team</Link>
+              </li>
+            </ul>
           </div>
-          <div className="w-full">
-            <div className="flex flex-col justify-center items-center w-full">
-              <div>
-                <h4 className="text-2xl font-semibold pb-2 ">Services</h4>
-              </div>
-              <div className="">
-                <ul className="">
-                  <li>ERP Solution</li>
-                  <li>Android/Ios Development</li>
-                  <li>Web Application</li>
-                  <li>Web Services/Hosting</li>
-                  <li>Accounting Software</li>
-                </ul>
-              </div>
+
+          <div className="flex flex-col w-full items-center justify-center">
+            <div>
+              <h4 className="text-2xl font-semibold pb-2 ">Services</h4>
             </div>
+
+            <ul className="">
+              <li>ERP Solution</li>
+              <li>Android/Ios Development</li>
+              <li>Web Application</li>
+              <li>Web Services/Hosting</li>
+              <li>Accounting Software</li>
+            </ul>
           </div>
         </div>
       </div>
