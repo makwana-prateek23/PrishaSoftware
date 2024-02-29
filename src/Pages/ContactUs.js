@@ -1,8 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../Components/Layout";
 function ContactUs() {
   return (
     <div>
+      <div>
+        <Helmet>
+          <title>Contact Us - Prisha Software</title>
+          <meta
+            name="description"
+            content="Get in touch with Prisha Software for inquiries, support, and collaborations."
+          />
+        </Helmet>
+      </div>
       <Layout>
         <main>
           <div>

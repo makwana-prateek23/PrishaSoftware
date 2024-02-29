@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -20,6 +21,14 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+
+        <meta
+          name="description"
+          content="Prisha Software provides innovative software solutions for businesses."
+        />
+      </Helmet>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

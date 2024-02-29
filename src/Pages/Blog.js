@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Layout from "../Components/Layout";
 import blogimg1 from "../Components/Assets/Blog/blogimg1.jpg";
@@ -6,6 +7,20 @@ import blogimg2 from "../Components/Assets/Blog/blogimg2.jpg";
 function Blog() {
   return (
     <div>
+      <Helmet>
+        <title>Blog - Prisha Software</title>
+        <meta
+          name="description"
+          content="Discover the comprehensive range of software services offered by Prisha Software."
+        />
+        <meta property="og:title" content="Service page" />
+
+        <meta
+          name="keywords"
+          content="Prisha Software, Software Company, Reactjs, PHP, Services, Web Services ,Web development ,Accounting Software, ERP Solution , Web Hosting, Digital LandScape , AcccountDigital, 24/7 Support"
+        />
+        <meta property="og:image" content="" />
+      </Helmet>
       <div className="BlogImage">
         <Layout>
           <main>

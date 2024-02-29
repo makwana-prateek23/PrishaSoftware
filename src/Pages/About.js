@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../Components/Layout";
 import Like from "../Components/Assets/LIke.png";
 import AboutSwiper from "../Components/AboutSwiper";
@@ -19,6 +20,23 @@ const images = {
 function AboutUs() {
   return (
     <div>
+      <Helmet>
+        <title>Aboutus - Prisha Software</title>
+        <meta
+          name="description"
+          content="Learn about Prisha Software - your trusted partner for innovative software solutions."
+        />
+        <meta property="og:title" content="About page" />
+        <meta
+          property="og:description"
+          content="About Page for the prisha software"
+        />
+        <meta
+          name="keywords"
+          content="Prisha Software, Software Company, Reactjs, PHP, About Page,Web development , Software Solution , Digital LandScape , AcccountDigital, 24/7 Support"
+        />
+        <meta property="og:image" content="" />
+      </Helmet>
       <Layout>
         <div>
           <main>

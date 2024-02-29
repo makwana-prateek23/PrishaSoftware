@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../Components/Layout";
 import Counter from "../Components/Counter";
 import Quality1 from "../Components/Assets/Services/Quality1.png";
@@ -48,6 +49,23 @@ function Services() {
   ];
   return (
     <div>
+      <Helmet>
+        <title>Services - Prisha Software</title>
+        <meta
+          name="description"
+          content="Prisha Software Features · 100% Secure · Fully Trusted · Customize ERP Software · 24-7 Support. Prisha Software provides 24*7 Support"
+        />
+        <meta property="og:title" content="Service page" />
+        <meta
+          property="og:description"
+          content="Services Page for the prisha software"
+        />
+        <meta
+          name="keywords"
+          content="Prisha Software, Software Company, Reactjs, PHP, Services, Web Services ,Web development ,Accounting Software, ERP Solution , Web Hosting, Digital LandScape , AcccountDigital, 24/7 Support"
+        />
+        <meta property="og:image" content="" />
+      </Helmet>
       <Layout>
         <main>
           <div className="ServicesBack  sm: pb-16 md:py-12 lg:py-16 xl:py-16 flex justify-center items-center text-center">

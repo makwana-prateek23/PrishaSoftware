@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Layout from "../Components/Layout";
 import MySwiper from "../Components/MYSwiper";
@@ -20,6 +21,23 @@ function Home() {
   };
   return (
     <div>
+      <div>
+        <Helmet>
+          <title>Home - Prisha Software</title>
+          <meta
+            name="description"
+            content="Welcome to Prisha Software. We offer innovative software solutions for businesses."
+          />
+          <meta
+            name="keywords"
+            content="Prisha Software, Web Development, Application Development , Account Software , AcccountDigital"
+          />
+          <meta property="og:title" content="Home page" />
+
+          <meta property="og:image" content="" />
+        </Helmet>
+        {/* The rest of your component's code */}
+      </div>
       <div className="wrapper">
         <Layout>
           <main>
@@ -350,7 +368,7 @@ function Home() {
                           {questionVisible[0] ? "-" : "+"}
                         </button>
                       </div>
-                      {questionVisible[0] && (
+                      {selectedQuestion === 0 && (
                         <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
                           <p>
                             We offer a wide range of software solutions
@@ -372,7 +390,7 @@ function Home() {
                           {questionVisible[1] ? "-" : "+"}
                         </button>
                       </div>
-                      {questionVisible[1] && (
+                      {selectedQuestion === 1 && (
                         <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
                           <p>
                             Yes, we offer comprehensive support and maintenance
@@ -395,7 +413,7 @@ function Home() {
                           {questionVisible[2] ? "-" : "+"}
                         </button>
                       </div>
-                      {questionVisible[2] && (
+                      {selectedQuestion === 2 && (
                         <div className="bg-green-100 rounded-lg p-4 mb-2 sm:w-8/12">
                           <p>
                             Yes, we specialize in developing custom software
