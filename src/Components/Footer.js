@@ -127,10 +127,7 @@ function Footer() {
                 <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <Link>Services</Link>
-              </li>
-              <li>
-                <Link>Our Team</Link>
+                <Link to="/services">Services</Link>
               </li>
             </ul>
           </div>
