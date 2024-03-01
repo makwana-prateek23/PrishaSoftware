@@ -244,7 +244,7 @@ function Home() {
                   data-aos="fade-right"
                 >
                   <h6
-                    className="text-sm sm:text-base md:text-base lg:text-xl"
+                    className=" sm:text-2xl md:text-2xl lg:text-lg"
                     style={{ color: "var(--text-color)" }}
                   >
                     Streamline Your Business with Optimized Solutions
@@ -430,7 +430,7 @@ function Home() {
 
                 <div className="py-4 sm:py-0 mb-4 px-4">
                   <h6
-                    className="text-2xl sm:text-3xl mb-2"
+                    className="text-base sm:text-2xl lg:text-lg mb-2"
                     style={{ color: "var(--text-color)" }}
                   >
                     Transform Your Business with Innovative Software Solutions

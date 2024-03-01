@@ -55,7 +55,7 @@ function AboutUs() {
                       Tailored Software Solutions
                     </h6>
                     <h3
-                      className="text-3xl sm:text-5xl font-bold mb-6"
+                      className="text-3xl sm:text-3xl font-bold mb-6"
                       style={{ color: "var(--primary-color)" }}
                     >
                       Elevate Your Business with
@@ -276,7 +276,7 @@ function AboutUs() {
                     About Prisha Software
                   </h6>
                   <h3
-                    className="text-5xl font-bold mb-4"
+                    className=" text-3xl sm:text-4xl lg:text-3xl font-bold mb-4"
                     style={{ color: "#01358d" }}
                   >
                     Revolutionizing the Digital Landscape
