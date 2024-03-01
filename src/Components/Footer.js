@@ -14,7 +14,7 @@ function Footer() {
             <div className="box-border bg-white mb-2 text-center rounded-md p-2 footerLogo">
               <img src={logo} alt="Company Logo" className="h-14" />
             </div>
-            <p className="mb-4 px-4 sm:text-center md:text-start text-balance ">
+            <p className="mb-4 px-4 sm:text-center text-balance md:text-start text-center ">
               We are providing premium quality Services and Softwares.
             </p>
             <div className="flex items-center">
@@ -65,23 +65,21 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center w-full  sm:justify-center mb-6 ">
-            <div className="flex flex-col justify-center items-center pt-2">
-              <h4 className="text-4xl sm:text-3xl md:text-4xl lg:text-2xl font-semibold pt-2  pb-4 ">
+          <div className="flex flex-col items-center w-full sm:justify-center mb-6 lg:mb-0">
+            <div className="flex flex-col justify-center items-center">
+              <h4 className="text-4xl sm:text-3xl md:text-4xl lg:text-2xl font-semibold pb-4 ">
                 Contact Info
               </h4>
             </div>
-            <ul className="sm:text-center text-balance md:text-start px-4">
-              <li className="">
+            <ul className="sm:text-center md:text-start px-4 sm:pr-6">
+              <li className="sm:px-4 lg:px-0 sm:indent-2 lg:indent-0">
                 <span style={{ color: "var(--text-color)" }} className="mr-2 ">
                   <i className="fa-solid fa-location-dot"></i>
                 </span>
-                406/A, Forth Floor, Shivalay Complex, Mavdi Chowk,
-                <span className="mb-2">
-                  Mavdi Main Road, Mavdi, Rajkot, Gujarat 360004
-                </span>{" "}
+                406/A, Forth Floor, Shivalay Complex, Mavdi Chowk, Mavdi Main
+                Road, Mavdi, Rajkot, Gujarat 360004
               </li>
-              <li className="">
+              <li className="sm:px-4 lg:px-0 sm:indent-4 md:indent-0">
                 <span
                   style={{ color: "var(--text-color)" }}
                   className="mr-2 my-2"
@@ -90,7 +88,7 @@ function Footer() {
                 </span>
                 Monday-Saturday : 9am-7pm
               </li>
-              <li className="s">
+              <li className=" sm:px-4 lg:px-0  sm:indent-4 md:indent-0">
                 {" "}
                 <span
                   style={{ color: "var(--text-color)" }}
@@ -100,10 +98,10 @@ function Footer() {
                 </span>
                 info@Prishasoftware.com
               </li>
-              <li>
+              <li className="sm:indent-4 sm:px-4 lg:px-0 md:indent-0">
                 <span
                   style={{ color: "var(--text-color)" }}
-                  className="mr-2 my-2 "
+                  className="mr-2 my-2"
                 >
                   <i className="fa-solid fa-phone"></i>
                 </span>
