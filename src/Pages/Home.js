@@ -23,7 +23,7 @@ function Home() {
     <div>
       <div>
         <Helmet>
-          <title>Home - Prisha Software</title>
+          <title>Prisha Software</title>
           <meta
             name="description"
             content="Welcome to Prisha Software. We offer innovative software solutions for businesses."
@@ -235,7 +235,7 @@ function Home() {
             </section>
 
             <section
-              className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl"
+              className="mx-auto px-4 sm:px-6 lg:px-8 lg:py-16 sm:py-8 max-w-screen-xl"
               style={{ position: "relative" }}
             >
               <div className="flex flex-col-reverse sm:flex-col  md:flex-col lg:flex-row items-center justify-between py-12 px-6 sm:px-12 lg:px-16 xl:px-24">
@@ -250,7 +250,7 @@ function Home() {
                     Streamline Your Business with Optimized Solutions
                   </h6>
                   <h2
-                    className="text-3xl sm:text-4xl md:text=5xl lg:text-6xl font-semibold mb-2"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-2"
                     style={{ color: "var(--primary-color)" }}
                   >
                     Elevate Your Operations with <br />
@@ -278,7 +278,7 @@ function Home() {
               </div>
             </section>
 
-            <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
+            <section className="mx-auto px-4 sm:px-6 sm:py-8 lg:px-8 lg:py-16  max-w-screen-xl">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
                 {/* Quality 1 */}
                 <div className="flex flex-col items-center">
@@ -345,7 +345,7 @@ function Home() {
               </div>
             </section>
 
-            <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
+            <section className="mx-auto px-4 sm:px-6 lg:px-8 sm:py-8 lg:py-16 max-w-screen-xl">
               <div
                 className="grid grid-cols-1 sm:grid-cols-2 py-10"
                 style={{
@@ -461,7 +461,7 @@ function Home() {
                 </div>
               </div>
             </section>
-            <section className="mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-screen-xl">
+            <section className="mx-auto px-4 sm:px-6 sm:py-8 lg:px-8 lg:py-16 max-w-screen-xl">
               <div className="flex flex-col md:flex-row items-center justify-center md:space-x-12">
                 <div className="p-8 text-center md:text-left md:w-1/2">
                   <h6 style={{ color: "var(--text-color)" }}>

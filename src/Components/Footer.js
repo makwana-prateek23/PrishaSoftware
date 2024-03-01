@@ -2,18 +2,19 @@ import React from "react";
 import logo from "../Components/Assets/logo.png";
 import { Link } from "react-router-dom";
 import BackToTopButton from "./BackToTop";
+
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="text-white pt-12" style={{ backgroundColor: "#0d2753" }}>
       <div className="max-w-7xl mx-auto px-6 sm:px-6 py-12 lg:px-8">
-        <div className="sm:grid grid-cols-1  md:grid-cols-4 gap-6">
-          <div className="flex flex-col w-full  justify-center items-center my-2 sm:px-6 md:px-4 ">
-            <div className="flex box-border bg-white mb-2 text-center rounded-md p-2 footerLogo">
+        <div className="sm:grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="flex flex-col w-full justify-center items-center my-2 sm:px-6 mb-8 md:px-4 ">
+            <div className="box-border bg-white mb-2 text-center rounded-md p-2 footerLogo">
               <img src={logo} alt="Company Logo" className="h-14" />
             </div>
-            <p className="mb-4 ">
+            <p className="mb-4 px-4 sm:text-center md:text-start text-balance ">
               We are providing premium quality Services and Softwares.
             </p>
             <div className="flex items-center">
@@ -64,11 +65,13 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:justify-center items-center">
-            <div>
-              <h4 className="text-2xl font-semibold pb-2 ">Contact Info</h4>
+          <div className="flex flex-col items-center w-full  sm:justify-center mb-6 ">
+            <div className="flex flex-col justify-center items-center pt-2">
+              <h4 className="text-4xl sm:text-3xl md:text-4xl lg:text-2xl font-semibold pt-2  pb-4 ">
+                Contact Info
+              </h4>
             </div>
-            <ul className="">
+            <ul className="sm:text-center text-balance md:text-start px-4">
               <li className="">
                 <span style={{ color: "var(--text-color)" }} className="mr-2 ">
                   <i className="fa-solid fa-location-dot"></i>
@@ -109,9 +112,11 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center justify-center w-full  ">
-            <div>
-              <h4 className="text-2xl font-semibold pb-2">Pages</h4>
+          <div className="flex flex-col items-center sm: justify-center w-full mb-6  ">
+            <div className="flex flex-col justify-center items-center">
+              <h4 className="text-4xl sm:text-3xl md:text-4xl lg:text-2xl font-semibold  pb-4">
+                Pages
+              </h4>
             </div>
             <ul>
               <li>
@@ -135,9 +140,11 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col w-full items-center justify-center">
-            <div>
-              <h4 className="text-2xl font-semibold pb-2 ">Services</h4>
+          <div className="flex flex-col w-full items-center justify-center mb-6">
+            <div className="flex flex-col justify-center items-center">
+              <h4 className="text-4xl sm:text-3xl md:text-4xl lg:text-2xl font-semibold  pb-4 ">
+                Services
+              </h4>
             </div>
 
             <ul className="">

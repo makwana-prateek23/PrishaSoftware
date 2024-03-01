@@ -11,7 +11,7 @@ const CircularProgressBar = ({ percentage, animationEffect }) => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
     });
   }, []);
 
@@ -48,7 +48,7 @@ const CircularProgressBar = ({ percentage, animationEffect }) => {
           }
           return newProgress;
         });
-      }, 20);
+      }, 5);
 
       return () => clearInterval(interval);
     }
