@@ -6,22 +6,32 @@ import Quality1 from "../Components/Assets/Services/Quality1.png";
 import Quality2 from "../Components/Assets/Services/Quality2.png";
 import Quality3 from "../Components/Assets/Services/Quality3.png";
 import Serviceimage from "../Components/Assets/Services/Serviceimage.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faRocket,
+  faChartSimple,
+  faBullhorn,
+  faCloudArrowUp,
+  faSliders,
+} from "@fortawesome/free-solid-svg-icons";
+import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
+
 function Services() {
   const sections = [
     {
-      icon: "fa-brands fa-rocketchat",
+      icon: faRocket,
       heading: "Exceptional Support",
       paragraph:
         "Experience unparalleled customer support with our dedicated team, ensuring prompt assistance and resolution to all your queries and concerns.",
     },
     {
-      icon: "fa-solid fa-chart-simple",
+      icon: faChartSimple,
       heading: "Proven Track Record",
       paragraph:
         "Benefit from our extensive experience and proven track record in delivering successful solutions, backed by a portfolio of satisfied clients and successful projects.",
     },
     {
-      icon: "fa-solid fa-bullhorn",
+      icon: faBullhorn,
       heading: "Optimized Performance",
       paragraph:
         "Elevate your business image with our cutting-edge software solutions, designed to enhance efficiency, productivity, and overall performance, providing your clients with an exceptional user experience.",
@@ -29,19 +39,19 @@ function Services() {
   ];
   const section2 = [
     {
-      icon: "fa-regular fa-star",
+      icon: farStar,
       heading: "Best Reviews",
       paragraph:
         "Our software has garnered top ratings and rave reviews from our satisfied clients, making us a trusted choice in the industry.",
     },
     {
-      icon: "fa-solid fa-cloud-arrow-up",
+      icon: faCloudArrowUp,
       heading: "Cloud Support",
       paragraph:
         "Experience seamless integration and scalability with our cloud support services, ensuring your software solutions are always accessible and adaptable to your growing needs.",
     },
     {
-      icon: "fa-solid fa-sliders",
+      icon: faSliders,
       heading: "Easy Connectivity",
       paragraph:
         "Connect effortlessly with our software solutions, designed with user-friendly interfaces and streamlined processes to enhance productivity and collaboration within your organization.",
@@ -225,9 +235,10 @@ function Services() {
                           <p className="text-gray-400">{section.paragraph}</p>
                         </div>
                         <div>
-                          <i
-                            className={`fa- ${section.icon} text-3xl text-red-500 mb-2`}
-                          ></i>
+                          <FontAwesomeIcon
+                            icon={section.icon}
+                            className="text-3xl text-red-500 mb-2"
+                          />
                         </div>
                       </div>
                     </div>
@@ -258,9 +269,10 @@ function Services() {
                           <p className="text-gray-400"> {section2.paragraph}</p>
                         </div>
                         <div>
-                          <i
-                            className={`fa- ${section2.icon} text-3xl text-red-500 mb-2`}
-                          ></i>
+                          <FontAwesomeIcon
+                            icon={section2.icon}
+                            className="text-3xl text-red-500 mb-2"
+                          />
                         </div>
                       </div>
                     </div>

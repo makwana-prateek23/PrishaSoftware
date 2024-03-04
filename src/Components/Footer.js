@@ -2,6 +2,18 @@ import React from "react";
 import logo from "../Components/Assets/logo.png";
 import { Link } from "react-router-dom";
 import BackToTopButton from "./BackToTop";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faLocationDot,
+  faClock,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,10 +38,10 @@ function Footer() {
                     rel="noopener noreferrer"
                   >
                     <div className="flex items-center justify-center bg-white rounded-full w-8 h-8">
-                      <i
-                        className="fa-brands fa-facebook"
+                      <FontAwesomeIcon
+                        icon={faFacebook}
                         style={{ color: "var(--primary-color)" }}
-                      ></i>
+                      />
                     </div>
                   </a>
                 </li>
@@ -40,10 +52,10 @@ function Footer() {
                     rel="noopener noreferrer"
                   >
                     <div className="flex items-center justify-center bg-white rounded-full w-8 h-8">
-                      <i
-                        className="fa-brands fa-instagram"
+                      <FontAwesomeIcon
+                        icon={faInstagram}
                         style={{ color: "var(--primary-color)" }}
-                      ></i>
+                      />
                     </div>
                   </a>
                 </li>
@@ -54,10 +66,10 @@ function Footer() {
                     rel="noopener noreferrer"
                   >
                     <div className="flex items-center justify-center bg-white rounded-full w-8 h-8">
-                      <i
-                        className="fa-brands fa-linkedin"
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
                         style={{ color: "var(--primary-color)" }}
-                      ></i>
+                      />
                     </div>
                   </a>
                 </li>
@@ -74,7 +86,7 @@ function Footer() {
             <ul className="sm:text-center md:text-start px-4 sm:pr-6">
               <li className="sm:px-4 lg:px-0 sm:indent-2 lg:indent-0">
                 <span style={{ color: "var(--text-color)" }} className="mr-2 ">
-                  <i className="fa-solid fa-location-dot"></i>
+                  <FontAwesomeIcon icon={faLocationDot} />
                 </span>
                 406/A, Forth Floor, Shivalay Complex, Mavdi Chowk, Mavdi Main
                 Road, Mavdi, Rajkot, Gujarat 360004
@@ -84,7 +96,7 @@ function Footer() {
                   style={{ color: "var(--text-color)" }}
                   className="mr-2 my-2"
                 >
-                  <i className="fa-regular fa-clock"></i>
+                  <FontAwesomeIcon icon={faClock} />
                 </span>
                 Monday-Saturday : 9am-7pm
               </li>
@@ -94,7 +106,7 @@ function Footer() {
                   style={{ color: "var(--text-color)" }}
                   className="mr-2 my-2"
                 >
-                  <i className="fa-regular fa-envelope"></i>
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </span>
                 info@Prishasoftware.com
               </li>
@@ -103,7 +115,7 @@ function Footer() {
                   style={{ color: "var(--text-color)" }}
                   className="mr-2 my-2"
                 >
-                  <i className="fa-solid fa-phone"></i>
+                  <FontAwesomeIcon icon={faPhone} />
                 </span>
                 63536 51151
               </li>
