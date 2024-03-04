@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "../Components/Assets/logo.png";
 
 function Header() {
@@ -82,7 +84,7 @@ function Header() {
                   }`}
                 >
                   <Link
-                    to="/services"
+                    to="/servicess"
                     style={{ color: "var(--primary-color)" }}
                   >
                     Services
@@ -117,7 +119,7 @@ function Header() {
         {window.innerWidth < 1024 && (
           <div className="block lg:hidden">
             <button className="menu-icon mx-8" onClick={toggleMenu}>
-              <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
+              <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
             </button>
           </div>
         )}
@@ -187,7 +189,7 @@ function Header() {
             onClick={toggleMenu}
             className="absolute top-2 right-2 text-white hover:text-white focus:outline-none"
           >
-            <i className="fas fa-times"></i>
+            <FontAwesomeIcon icon={faTimes} />
           </button>
         </div>
       )}

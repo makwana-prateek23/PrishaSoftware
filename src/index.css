@@ -326,7 +326,7 @@ li.active .line {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .logo {
-    width: 200px; /* Adjust width for smaller screens */
+    width: 100px; /* Adjust width for smaller screens */
     height: 80px; /* Adjust height for smaller screens */
   }
 }
