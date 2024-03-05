@@ -29,6 +29,7 @@
 }
 body {
   line-height: 25px;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -173,7 +174,7 @@ li.active .line {
   /* Center the Swiper horizontally */
 }
 /* Responsive Styles */
-@media screen and (min-width: 540px) {
+@media screen and (max-width: 540px) {
   .swiper-container {
     display: block; /* Adjust the height for screens wider than 640px */
     width: 100%;
@@ -191,8 +192,7 @@ li.active .line {
 
 @media screen and (min-width: 1024px) {
   .swiper-container {
-    height: 400px;
-    width: 110%;
+    width: 100%;
     margin-top: 100px; /* Adjust the height for screens wider than 1024px */
   }
 }
@@ -243,7 +243,6 @@ li.active .line {
 .Quality-2 {
   position: relative;
   background-color: #01358d;
-  box-sizing: border-box;
   border-radius: 50%;
   height: 14vw;
   width: 14vw;
@@ -476,15 +475,4 @@ li.active .line {
 
 .Image-Back {
   background-image: url("../src//Components/Assets/ImageBack.png");
-}
-
-.HomeImage {
-  width: 100vh;
-}
-
-@media screen and (min-width: 768px) {
-  /* Adjust width for medium-sized screens */
-  .HomeImage {
-    width: 80vh; /* You can adjust this value as needed */
-  }
 }
