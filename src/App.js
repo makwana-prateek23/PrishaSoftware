@@ -14,11 +14,12 @@ function App() {
   useEffect(() => {
     AOS.init({
       // Global AOS settings
-      duration: 800,
+      duration: 200,
       easing: "ease-out",
       once: true, // Whether animation should happen only once
     });
   }, []);
+
   return (
     <div className="App">
       <Helmet>

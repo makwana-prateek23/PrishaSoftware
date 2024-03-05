@@ -333,13 +333,40 @@ li.active .line {
 
 .Circularbar {
   width: 180px;
-  height: 18 0px;
+  height: 180px;
+}
+
+@media screen and (max-width: 768px) {
+  .Circularbar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Circularbar {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .laptopImage {
   max-width: 100%; /* Ensures the image does not exceed the width of its container */
   height: auto; /* Allows the image to adjust its height while maintaining aspect ratio */
   max-height: 100%; /* Ensures the image does not exceed the height of its container */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .laptopImage {
+    max-width: 80%; /* Decrease the max-width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .laptopImage {
+    max-width: 60%; /* Further decrease the max-width for even smaller screens */
+  }
 }
 
 .email {

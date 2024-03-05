@@ -38,22 +38,22 @@ const MySwiper = () => {
         style={{ zIndex: 0, background: "none" }} // Set z-index here
       >
         <SwiperSlide className="swiper-slide">
-          <img src={images[0].image} alt="" />
+          <img src={images[0].image} alt="Slide1" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-          <img src={images[1].image} alt="" />
+          <img src={images[1].image} alt="Slide2" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-          <img src={images[2].image} alt="" />
+          <img src={images[2].image} alt="Slide3" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-          <img src={images[0].image} alt="" />
+          <img src={images[0].image} alt="Slide1" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-          <img src={images[1].image} alt="" />
+          <img src={images[1].image} alt="Slide2" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-          <img src={images[2].image} alt="" />
+          <img src={images[2].image} alt="Slide3" loading="lazy" />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -24,8 +24,13 @@ function Footer() {
         <div className="sm:grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="flex flex-col w-full justify-center items-center my-2 sm:px-6 mb-8 md:px-4 ">
             <div className="box-border bg-white mb-2 text-center rounded-md p-2 footerLogo">
-              <img src={logo} alt="Company Logo" className="h-14" />
+              <img
+                src={logo}
+                alt="Company Logo"
+                className="sm:h-6 md:h-12 lg:h-18  w-auto"
+              />
             </div>
+
             <p className="mb-4 px-4 sm:text-center text-balance md:text-start text-center ">
               We are providing premium quality Services and Softwares.
             </p>

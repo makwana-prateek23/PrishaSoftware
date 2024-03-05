@@ -80,13 +80,10 @@ function Header() {
                 </li>
                 <li
                   className={`relative mx-8 ${
-                    location.pathname === "/services" ? "active" : ""
+                    location.pathname === "/service" ? "active" : ""
                   }`}
                 >
-                  <Link
-                    to="/servicess"
-                    style={{ color: "var(--primary-color)" }}
-                  >
+                  <Link to="/service" style={{ color: "var(--primary-color)" }}>
                     Services
                     <span className="line" />
                   </Link>
@@ -156,10 +153,10 @@ function Header() {
             </li>
             <li
               className={`relative my-4 w-3/12 ${
-                location.pathname === "/services" ? "active" : ""
+                location.pathname === "/service" ? "active" : ""
               }`}
             >
-              <Link to="/services" style={{ color: "var(--primary-color)" }}>
+              <Link to="/service" style={{ color: "var(--primary-color)" }}>
                 Services
                 <span className="line" />
               </Link>

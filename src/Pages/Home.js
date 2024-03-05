@@ -46,8 +46,8 @@ function Home() {
                 <div className="text-center">
                   {" "}
                   <div>
-                    <h3
-                      className="text-3xl font-bold sm:text-2xl md:text-5xl lg:text-6xl xl:text-6xl"
+                    <h1
+                      className="font-bold sm:text-2xl md:text-5xl lg:text-5xl xl:text-6xl"
                       style={{ color: "var(--primary-color)" }}
                     >
                       PrishaSoftware is a leading
@@ -58,18 +58,18 @@ function Home() {
                         {" "}
                         Company
                       </span>
-                    </h3>
+                    </h1>
                   </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 ">
-                  <div className="flex justify-center sm:justify-end">
+                <div className="grid grid-cols-1 sm:grid-cols-2">
+                  <div className="flex justify-center items-center sm:justify-end">
                     <div
                       className="text-center mt-4"
                       data-aos="fade-up"
                       data-aos-delay="200"
                     >
                       <button
-                        className="mx-2 my-4 text-white py-4 px-12 sm:px-12 rounded-full font-semibold"
+                        className="mx-2 my-4 text-white py-2 px-6 sm:px-12 sm:py-4 rounded-full font-semibold"
                         style={{
                           backgroundColor: "var(--text-color)",
                           boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
@@ -81,12 +81,12 @@ function Home() {
                   </div>
                   <div className="flex justify-center sm:justify-start">
                     <div
-                      className="mt-2"
+                      className="mt-4"
                       data-aos="fade-up"
                       data-aos-delay="200"
                     >
                       <button
-                        className="mx-2 my-4 text-white py-4 px-12 rounded-full button-1"
+                        className="mx-2 my-4 text-white py-2 px-6 sm:px-12 sm:py-4 rounded-full button-1"
                         style={{
                           backgroundColor: "var(--primary-color)",
                           boxShadow: "2px 6px 6px rgba(0, 0, 0, 0.5)",
@@ -101,7 +101,7 @@ function Home() {
               <section className="mx-auto px-4 sm:px-6 lg:px-8  sm:py-4 lg:py-8 md:py-6 xl:py-12 max-w-screen-xl">
                 <div
                   className="flex justify-center sm:justify-start md:justify-center lg:justify-center xl:justify-center"
-                  data-aos-delay="200"
+                  data-aos-delay="00"
                   data-aos="zoom-in"
                 >
                   <MySwiper />
@@ -273,7 +273,12 @@ function Home() {
                   data-aos="fade-left"
                   data-aos-delay="200"
                 >
-                  <img src={ImageBack2} alt="image2" className="w-full" />
+                  <img
+                    src={ImageBack2}
+                    alt="image2"
+                    loading="lazy"
+                    className="w-full"
+                  />
                 </div>
               </div>
             </section>
@@ -281,7 +286,7 @@ function Home() {
             <section className="mx-auto px-4 sm:px-6 sm:py-8 lg:px-8 lg:py-16  max-w-screen-xl">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
                 {/* Quality 1 */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col  items-center">
                   <div>
                     <CircularProgressBar percentage={90} />
                   </div>
@@ -499,13 +504,14 @@ function Home() {
                 <div
                   data-aos="fade-left"
                   data-aos-delay="200"
-                  className="md:w-1/2"
+                  className="md:w-1/2 flex justify-center"
                 >
                   <img
                     src={Laptop}
                     className="laptopImage"
                     alt="laptopimage"
                     style={{ width: "100%", height: "auto" }}
+                    loading="lazy"
                   />
                 </div>
               </div>
