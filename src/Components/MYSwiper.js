@@ -7,9 +7,9 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 const images = [
-  { image: require("./Assets/Slide1.jpeg") },
-  { image: require("./Assets/Slide-2.jpeg") },
-  { image: require("./Assets/Slide-3.jpeg") },
+  { image: require("./Assets/Slide1.webp") },
+  { image: require("./Assets/Slide-2.webp") },
+  { image: require("./Assets/Slide-3.webp") },
 ];
 const MySwiper = () => {
   // Adjust based on the total number of slides

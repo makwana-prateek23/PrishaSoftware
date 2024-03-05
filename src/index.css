@@ -99,7 +99,7 @@ li.active .line {
   }
 }
 .wrapper {
-  background-image: url(./Components/Assets/h4-background-img-1.jpg);
+  background-image: url(./Components/Assets/asset-16.webp);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -476,4 +476,15 @@ li.active .line {
 
 .Image-Back {
   background-image: url("../src//Components/Assets/ImageBack.png");
+}
+
+.HomeImage {
+  width: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjust width for medium-sized screens */
+  .HomeImage {
+    width: 80vh; /* You can adjust this value as needed */
+  }
 }

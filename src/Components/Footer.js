@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Components/Assets/logo.png";
+import logo from "../Components/Assets/logo.webp";
 import { Link } from "react-router-dom";
 import BackToTopButton from "./BackToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

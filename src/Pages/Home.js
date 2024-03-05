@@ -5,10 +5,10 @@ import Layout from "../Components/Layout";
 import MySwiper from "../Components/MYSwiper";
 import Quality1 from "../Components/Assets/Quality1.png";
 import Quality2 from "../Components/Assets/Quality2.png";
-import ImageBack2 from "../Components/Assets/ImageBack2.png";
+import ImageBack2 from "../Components/Assets/ImageBack2.webp";
 import CircularProgressBar from "../Components/CircularBar";
 import Laptop from "../Components/Assets/Laptop.png";
-import backimage from "../Components/Assets/backImage.png";
+import backimage from "../Components/Assets/backImage.webp";
 function Home() {
   const [questionVisible, setQuestionVisible] = useState([false, false, false]);
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -42,24 +42,19 @@ function Home() {
         <Layout>
           <main>
             <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12  xl:py-24 max-w-screen-xl">
-              <div className="py-12 sm:py-8">
+              <div className=" sm:py-8">
                 <div className="text-center">
                   {" "}
-                  <div>
-                    <h1
-                      className="font-bold sm:text-2xl md:text-5xl lg:text-5xl xl:text-6xl"
-                      style={{ color: "var(--primary-color)" }}
-                    >
-                      PrishaSoftware is a leading
-                      <br />
-                      Product
-                      <br /> Based Software
-                      <span style={{ color: "var(--text-color)" }}>
-                        {" "}
-                        Company
-                      </span>
-                    </h1>
-                  </div>
+                  <h1
+                    className=" sm:text-2xl sm:font-bold md:text-4xl md:font-semibold lg:text-5xl lg:font-bold xl:text-6xl xl:font-bold"
+                    style={{ color: "var(--primary-color)" }}
+                  >
+                    PrishaSoftware is a leading
+                    <br />
+                    Product
+                    <br /> Based Software
+                    <span style={{ color: "var(--text-color)" }}> Company</span>
+                  </h1>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                   <div className="flex justify-center items-center sm:justify-end">
@@ -269,15 +264,15 @@ function Home() {
                   </p>
                 </div>
                 <div
-                  className="w-full sm:w-1/2 bg-cover bg-center mt-6 sm:mt-0"
+                  className="w-full sm:w-1/2 flex justify-center  mt-6 sm:mt-0"
                   data-aos="fade-left"
-                  data-aos-delay="200"
+                  data-aos-delay="100"
                 >
                   <img
                     src={ImageBack2}
                     alt="image2"
                     loading="lazy"
-                    className="w-full"
+                    className="HomeImage"
                   />
                 </div>
               </div>

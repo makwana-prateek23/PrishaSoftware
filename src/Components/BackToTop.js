@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // Import your CSS file for styling
@@ -38,10 +40,10 @@ const BackToTopButton = () => {
         onClick={scrollToTop}
         title="Back to Top"
       >
-        <i
-          className="fas fa-arrow-up"
+        <FontAwesomeIcon
+          icon={faArrowUp}
           style={{ color: "var(--text-color)" }}
-        ></i>
+        />
       </button>
     </div>
   );
