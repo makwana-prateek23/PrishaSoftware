@@ -60,21 +60,20 @@ function Services() {
   return (
     <div>
       <Helmet>
-        <title>Services - Prisha Software</title>
+        <title>Our Services - Tailored Solutions for Your Business Needs</title>
         <meta
           name="description"
-          content="Prisha Software Features · 100% Secure · Fully Trusted · Customize ERP Software · 24-7 Support. Prisha Software provides 24*7 Support"
-        />
-        <meta property="og:title" content="Service page" />
-        <meta
-          property="og:description"
-          content="Services Page for the prisha software"
+          content="Explore our comprehensive range of services at PrishSoftware. From custom software development to IT consulting, we provide tailored solutions to meet your business needs."
         />
         <meta
           name="keywords"
-          content="Prisha Software, Software Company, Reactjs, PHP, Services, Web Services ,Web development ,Accounting Software, ERP Solution , Web Hosting, Digital LandScape , AcccountDigital, 24/7 Support"
+          content="Services, Solutions, Software Development, IT Consulting, Custom Solutions"
         />
-        <meta property="og:image" content="" />
+
+        <meta
+          property="og:image"
+          content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
+        />
       </Helmet>
       <Layout>
         <main>

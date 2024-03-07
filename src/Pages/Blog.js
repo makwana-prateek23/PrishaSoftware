@@ -8,18 +8,22 @@ function Blog() {
   return (
     <div>
       <Helmet>
-        <title>Blog - Prisha Software</title>
+        <title>
+          PrishSoftware Blog - Stay Informed with Our Latest Insights
+        </title>
         <meta
           name="description"
-          content="Discover the comprehensive range of software services offered by Prisha Software."
+          content="Explore the PrishSoftware blog for the latest insights, trends, and updates in the world of software development and technology. Stay informed to stay ahead."
         />
-        <meta property="og:title" content="Service page" />
-
         <meta
           name="keywords"
-          content="Prisha Software, Software Company, Reactjs, PHP, Services, Web Services ,Web development ,Accounting Software, ERP Solution , Web Hosting, Digital LandScape , AcccountDigital, 24/7 Support"
+          content="Blog, PrishSoftware Blog, Insights, Technology Trends, Software Development Updates"
         />
-        <meta property="og:image" content="" />
+
+        <meta
+          property="og:image"
+          content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
+        />
       </Helmet>
       <div className="BlogImage">
         <Layout>

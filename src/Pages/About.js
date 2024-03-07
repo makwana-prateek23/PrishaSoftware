@@ -21,21 +21,19 @@ function AboutUs() {
   return (
     <div>
       <Helmet>
-        <title>Aboutus - Prisha Software</title>
+        <title>About PrishSoftware - Our Mission, Vision, and Team</title>
         <meta
           name="description"
-          content="Learn about Prisha Software - your trusted partner for innovative software solutions."
-        />
-        <meta property="og:title" content="About page" />
-        <meta
-          property="og:description"
-          content="About Page for the prisha software"
+          content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
         />
         <meta
           name="keywords"
           content="Prisha Software, Software Company, Reactjs, PHP, About Page,Web development , Software Solution , Digital LandScape , AcccountDigital, 24/7 Support"
         />
-        <meta property="og:image" content="" />
+        <meta
+          property="og:image"
+          content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
+        />
       </Helmet>
       <Layout>
         <div>

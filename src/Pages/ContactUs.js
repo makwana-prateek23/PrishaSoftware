@@ -14,10 +14,21 @@ function ContactUs() {
     <div>
       <div>
         <Helmet>
-          <title>Contact Us - Prisha Software</title>
+          <title>
+            Contact PrishSoftware - Get in Touch for Expert Assistance
+          </title>
           <meta
             name="description"
-            content="Get in touch with Prisha Software for inquiries, support, and collaborations."
+            content="Contact PrishSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
+          />
+          <meta
+            name="keywords"
+            content="Contact PrishSoftware, Contact Us, Get in Touch, Support, Assistance"
+          />
+
+          <meta
+            property="og:image"
+            content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
           />
         </Helmet>
       </div>

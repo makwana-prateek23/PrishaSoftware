@@ -22,18 +22,22 @@ function Home() {
     <div>
       <div>
         <Helmet>
-          <title>Prisha Software</title>
+          <title>PrishSoftware - Innovative Solutions for Your Business</title>
           <meta
             name="description"
-            content="Welcome to Prisha Software. We offer innovative software solutions for businesses."
+            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
           />
           <meta
             name="keywords"
-            content="Prisha Software, Web Development, Application Development , Account Software , AcccountDigital"
+            content="Software solutions, Business technology, Innovation, PrishSoftware"
           />
-          <meta property="og:title" content="Home page" />
 
-          <meta property="og:image" content="" />
+          <meta
+            property="og:title"
+            content="We convert innovation into digitalisation"
+          />
+
+          <meta property="og:image" content="../Components/Assets/logo.webp" />
         </Helmet>
         {/* The rest of your component's code */}
       </div>
