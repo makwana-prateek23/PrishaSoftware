@@ -40,8 +40,12 @@ function Home() {
       <div className="wrapper">
         <Layout>
           <main>
-            <Intro />
-            <Features />
+            <div className="py-16 sm:py-8">
+              <Intro />
+            </div>
+            <div>
+              <Features />
+            </div>
 
             <section
               className="mx-auto px-4 sm:px-6 lg:px-8 lg:py-16 sm:py-8 max-w-screen-xl"
@@ -263,7 +267,7 @@ function Home() {
                   </p>
                   <div className="mt-4">
                     <button
-                      className="mx-2 my-4 text-white py-4 px-8 sm:px-12 rounded-full font-semibold"
+                      className="mx-2 my-4 text-white py-2 px-6 sm:px-12 sm:py-4 rounded-full font-semibold"
                       style={{
                         backgroundColor: "var(--text-color)",
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",
@@ -300,7 +304,7 @@ function Home() {
                   </p>
                   <div className="mt-4">
                     <button
-                      className="mx-2 my-4 text-white py-4 px-8 md:px-12 rounded-full font-semibold"
+                      className="mx-2 my-4 text-white py-2 px-6 sm:px-12 sm:py-4 rounded-full font-semibold"
                       style={{
                         backgroundColor: "var(--text-color)",
                         boxShadow: "0px 6px 13px rgba(0, 0, 0, 0.5)",

@@ -10,7 +10,7 @@ function Intro() {
           <div className="text-center">
             {" "}
             <h1
-              className=" sm:text-2xl sm:font-bold md:text-4xl md:font-semibold lg:text-5xl lg:font-bold xl:text-6xl xl:font-bold"
+              className="font-bold sm:text-3xl sm:font-bold md:text-4xl md:font-bold lg:text-5xl lg:font-bold xl:text-6xl xl:font-bold"
               style={{ color: "var(--primary-color)" }}
             >
               PrishaSoftware is a leading
@@ -53,9 +53,9 @@ function Intro() {
             </div>
           </div>
         </div>
-        <section className="mx-auto px-4 sm:px-6 lg:px-8  sm:py-4 lg:py-8 md:py-6 xl:py-12 max-w-screen-xl">
+        <section className="mx-auto px-4 sm:px-6 lg:px-8  sm:py-12 lg:py-8 md:py-6 xl:py-12 max-w-screen-xl">
           <div
-            className="flex justify-center sm:justify-start md:justify-center lg:justify-center xl:justify-center"
+            className="flex justify-center sm:my-8 items-center sm:justify-start sm:items-center md:justify-center lg:justify-center xl:justify-center"
             data-aos-delay="00"
             data-aos="zoom-in"
           >

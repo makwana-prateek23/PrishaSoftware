@@ -1,27 +1,18 @@
 :root {
-  /* Primary colors */
   --primary-color: #01358d;
   --primary-color-light: #9deed8;
   --text-color: #f9556d;
   --text-color-secondary: #ee2852;
   --primary-color-dark: #0a1f45;
-
-  /* Secondary colors */
   --secondary-color: #666666;
   --secondary-color-light: #aaaaaa;
   --secondary-color-dark: #0d2753;
-
-  /* Background colors */
   --background-color: #ffffff;
   --background-color-dark: #fbf9f9;
   --background-color-light: #fff3f4;
-
-  /* Text colors */
   --text-color: #000000;
   --text-color-light: #ffffff;
   --text-color-dark: #666666;
-
-  /* Additional colors */
   --text-color: #ee2852;
   --text-color-secondary: #f9556d;
   --success-color: #a6a6a6;
@@ -31,14 +22,13 @@ body {
   line-height: 25px;
   overflow-x: hidden;
 }
-html,
-body {
+body,
+html {
   height: 100%;
 }
 main {
   min-height: 100%;
 }
-
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -47,16 +37,13 @@ main {
     transform: translateY(0);
   }
 }
-
 .header {
   background-color: transparent;
-  /* Other header styles */
 }
-
 .header.scrolled {
-  background-color: rgb(247, 247, 247);
+  background-color: #f7f7f7;
   opacity: 0.8;
-  animation: slideDown 0.3s ease forwards;
+  animation: 0.3s forwards slideDown;
 }
 @keyframes bounce {
   0%,
@@ -67,9 +54,8 @@ main {
     transform: translateY(-10px);
   }
 }
-
 .back-to-top-btn.show {
-  animation: bounce 1s ease infinite;
+  animation: 1s infinite bounce;
 }
 .footerLogo {
   width: 180px;
@@ -83,21 +69,13 @@ main {
   background-color: var(--text-color);
   transition: width 0.3s ease-in-out;
 }
-
+.swiper,
 li:hover .line {
   width: 100%;
 }
-
 li.active .line {
   width: 100%;
-  transition: none; /* Override transition for the active link */
-}
-
-@media (max-width: 768px) {
-  li.active .line,
-  li:hover .line {
-    width: 100%;
-  }
+  transition: none;
 }
 .wrapper {
   background-image: url(./Components/Assets/asset-16.webp);
@@ -106,60 +84,58 @@ li.active .line {
   min-height: 100vh;
 }
 .swiper {
-  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  z-index: 0; /* Make sure it's lower than your footer */
-  position: relative; /* Ensure proper stacking context */
+  z-index: 0;
+  position: relative;
 }
-.swiper-slide .swiper-slide-visible {
+.swiper-slide .swiper-slide-visible,
+.swiper-slide-shadow-next,
+.swiper-slide-shadow-prev {
   display: none !important;
 }
-/* Adjust the size of the Swiper slides */
 .swiper-slide {
   width: 160%;
   height: 100%;
   border-radius: 10px;
-  overflow: hidden; /* Decrease height if needed */
+  overflow: hidden;
 }
-
-/* Ensure images fill the slide container */
 .swiper-slide img {
   width: 200%;
   height: 200%;
   object-fit: cover;
 }
-
-/* Ensure the previous and next slides are visible */
 .swiper-wrapper {
   overflow: visible;
 }
-
-/* Adjust the rotation and stretch parameters for the coverflow effect */
-.swiper-slide-prev,
-.swiper-slide-next,
+.swiper-slide-duplicate-next,
 .swiper-slide-duplicate-prev,
-.swiper-slide-duplicate-next {
+.swiper-slide-next,
+.swiper-slide-prev {
   max-width: 80%;
-  background: none;
+  background: 0 0;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
-  /* Adjust rotation and scale as needed */
 }
-
+.BlogImage,
+.ServiceBack2,
+.ServicesBack,
+.email {
+  background-size: cover;
+  background-position: center;
+}
+.Quality-1,
+.Quality-2,
+.Quality-3 {
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
 .swiper-pagination {
   display: none;
 }
-/* .swiper-slide-active {
-  transform: translateX(0) !important;
-}
-
-.mySwiper .swiper-wrapper .swiper-slide {
-  border-radius: 10px !important;
-} */
 .swiper-container {
-  width: 120%; /* Adjust the width as needed */
+  width: 120%;
   height: 200px;
   padding-left: 12px;
   padding-right: 12px;
@@ -169,42 +145,32 @@ li.active .line {
   text-align: center;
   display: flex;
   align-items: center;
-
-  /* Adjust the height as needed */
-  /* Center the Swiper horizontally */
 }
-/* Responsive Styles */
 @media screen and (max-width: 540px) {
   .swiper-container {
-    display: block; /* Adjust the height for screens wider than 640px */
+    display: block;
     width: 100%;
+    margin-top: 100px;
     align-items: center;
   }
 }
-
 @media screen and (min-width: 768px) {
   .swiper-container {
-    display: flex;
+    display: block;
     width: 110%;
     height: 200px;
-    margin-top: 100px;
-    align-items: center; /* Adjust the height for screens wider than 768px */
+
+    /* Adjust the height for screens wider than 768px */
   }
 }
-
 @media screen and (min-width: 1024px) {
   .swiper-container {
     width: 100%;
-    margin-top: 100px; /* Adjust the height for screens wider than 1024px */
+    margin-top: 100px;
   }
 }
-.swiper-slide-shadow-prev,
-.swiper-slide-shadow-next {
-  display: none !important;
-}
-
 .Extra-heading {
-  color: lightsalmon;
+  color: #ffa07a;
   font-size: 120px;
   margin: 0;
   padding: 0;
@@ -213,75 +179,64 @@ li.active .line {
   z-index: 0.3;
   opacity: 1.4;
 }
-
+.BlogImage,
+.qodef-process-wave-line {
+  z-index: -1;
+}
 .button-1 {
-  position: relative; /* Ensure the parent container is positioned */
+  position: relative;
   background-color: var(--primary-color);
-  border: none; /* Remove button border if necessary */
+  border: none;
   cursor: pointer;
 }
+.Quality-1,
+.Quality-2,
+.Quality-3,
 .button-1::after {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Position the pseudo-element */
-  top: 2px; /* Adjust as needed */
-  left: 2px; /* Adjust as needed */
-  right: 2px; /* Adjust as needed */
-  bottom: 2px; /* Adjust as needed */
-  background-color: black; /* Color of the shadow */
-  filter: brightness(80%); /* Adjust brightness to control shadow intensity */
-  z-index: -1; /* Ensure the shadow is behind the button */
-  border-radius: 50%; /* Adjust border-radius to match the button */
+  border-radius: 50%;
+}
+.button-1::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #000;
+  filter: brightness(80%);
+  z-index: -1;
 }
 .Quality-1 {
-  position: relative;
   background-color: #9deed8;
   height: 12vw;
   width: 12vw;
-  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
   padding: 2vw;
-  border-radius: 50%;
 }
-
 .Quality-2 {
-  position: relative;
   background-color: #01358d;
-  border-radius: 50%;
   height: 14vw;
   width: 14vw;
-  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
   padding: 2.5vw;
 }
-
 .Quality-3 {
-  position: relative;
   background-color: #ee2852;
   box-sizing: border-box;
-  border-radius: 50%;
   height: 12vw;
   width: 12vw;
-  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2);
   padding: 2vw;
 }
-
 @media screen and (max-width: 768px) {
-  .Quality-1 {
-    height: 20vw;
-    width: 20vw;
-    padding: 2vw;
-  }
-
-  .Quality-2 {
-    height: 25vw;
-    width: 25vw;
-    padding: 2vw;
-  }
-
+  .Quality-1,
   .Quality-3 {
     height: 20vw;
     width: 20vw;
     padding: 2vw;
   }
-
+  .Quality-2 {
+    height: 25vw;
+    width: 25vw;
+    padding: 2vw;
+  }
   .feature-2 {
     bottom: 10vw;
   }
@@ -290,108 +245,70 @@ li.active .line {
   position: relative;
   width: 100%;
 }
-
 .features-inner {
   position: relative !important;
-  /* Ensure inner features are positioned relative */
-  /* Set a higher display: flex;  z-index to ensure it appears above the SVG */
 }
-
 .features-svg {
   position: absolute;
-  width: 100%; /* Set width to ensure SVG occupies full width */
+  width: 100%;
   height: auto;
   top: 0;
-  /* Set height to auto to maintain aspect ratio */
 }
-
-.qodef-process-wave-line {
-  z-index: -1;
-  /* Make sure the SVG is displayed as a block element */
-}
-
 .feature-2 {
   position: relative;
   bottom: 6vw;
 }
-
 .quality-text {
   font-size: 34px;
 }
-
 .logo {
   width: 250px;
   height: 100px;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .logo {
-    width: 100px; /* Adjust width for smaller screens */
-    height: 80px; /* Adjust height for smaller screens */
-  }
-}
-
 .Circularbar {
   width: 180px;
   height: 180px;
 }
-
+.laptopImage {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
 @media screen and (max-width: 768px) {
   .Circularbar {
     width: 150px;
     height: 150px;
   }
+  .laptopImage {
+    max-width: 80%;
+  }
 }
-
 @media screen and (max-width: 480px) {
   .Circularbar {
     width: 120px;
     height: 120px;
   }
-}
-
-.laptopImage {
-  max-width: 100%; /* Ensures the image does not exceed the width of its container */
-  height: auto; /* Allows the image to adjust its height while maintaining aspect ratio */
-  max-height: 100%; /* Ensures the image does not exceed the height of its container */
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
   .laptopImage {
-    max-width: 80%; /* Decrease the max-width for smaller screens */
+    max-width: 60%;
   }
 }
-
-@media screen and (max-width: 480px) {
-  .laptopImage {
-    max-width: 60%; /* Further decrease the max-width for even smaller screens */
-  }
-}
-
 .email {
   background-image: url(../src/Components/Assets/AboutImage.jpg);
-  background-size: cover;
-  background-position: center;
 }
-
 .about-swiper .swiper-wrapper .swiper-about-slide img {
   display: flex;
   justify-content: center;
   padding: auto;
 }
-
+.swiper-about-slide,
+.swiper-about-slide img {
+  justify-content: center;
+  display: flex;
+}
 .swiper-about-slide img {
   width: 400px;
-  display: flex;
-  justify-content: center;
   padding: 12px;
   align-items: center;
-}
-.swiper-about-slide {
-  display: flex;
-  justify-content: center;
 }
 .swiper
   .swiper-initialized
@@ -402,79 +319,61 @@ li.active .line {
   justify-content: center;
   margin-left: 12px;
 }
-
 .ServicesBack {
   background-image: url("../src//Components/Assets/Services/ServicesBack.jpg");
-  background-size: cover; /* Ensure the background image covers the entire container */
-  background-position: center; /* Center the background image */
-  height: 70vh; /* Set a minimum height to ensure the background image is visible */
+  height: 70vh;
   background-attachment: fixed;
-  /* Fix the background image to prevent scrolling */
 }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
+  li.active .line,
+  li:hover .line {
+    width: 100%;
+  }
+  .logo {
+    width: 100px;
+    height: 80px;
+  }
   .ServicesBack {
-    /* Adjust minimum height for smaller screens */
     height: 100%;
     width: 100%;
-    background-size: cover; /* Ensure the background image covers the entire container */
+    background-size: cover;
     background-position: center;
-    background-attachment: scroll; /* Change background attachment for smaller screens */
+    background-attachment: scroll;
   }
 }
-
-/* Responsive CSS */
-
-.Servicefeature1 {
-  padding: 12px;
-  width: 320px;
-  height: 390px;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
-}
-
+.Servicefeature1,
 .Servicefeature2 {
-  padding: 12px;
   height: 390px;
-  width: 320px;
   box-sizing: border-box;
+}
+.Servicefeature1,
+.Servicefeature2,
+.Servicefeature3 {
+  padding: 12px;
+  width: 320px;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
 .Servicefeature3 {
-  padding: 12px;
   height: 370px;
-  width: 320px;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
-
 .Service-main {
   min-height: 600px;
   padding: 122px;
 }
-
 .ServiceBack2 {
   background-image: url("../src/Components/Assets/Services/ServiceBack2.png");
-  background-size: cover;
-  background-position: center;
   min-height: 40vh;
   background-attachment: scroll;
 }
-
 .BlogImage {
   background-image: url("../src//Components/Assets/Blog/BlogImage.jpg");
-  background-size: cover;
-  background-position: center;
   max-height: 500px;
   width: full;
   background-attachment: fixed;
-  z-index: -1;
 }
-
 .min-h-500 {
   min-height: 400px;
 }
-
 .Image-Back {
   background-image: url("../src//Components/Assets/ImageBack.png");
 }
