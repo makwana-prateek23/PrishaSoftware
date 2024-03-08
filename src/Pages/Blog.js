@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import androidChromeIcon from "../Components/Assets/androidChromIcon.png";
 import { Link } from "react-router-dom";
 import Layout from "../Components/Layout";
 import blogimg1 from "../Components/Assets/Blog/blogimg1.jpg";
@@ -26,7 +27,7 @@ function Blog() {
           property="og:title"
           content="PrishSoftware Blog - Stay Informed with Our Latest Insights"
         />
-        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta property="og:image" content={androidChromeIcon} />
         <meta
           property="og:description"
           content="Explore the PrishSoftware blog for the latest insights, trends, and updates in the world of software development and technology. Stay informed to stay ahead."
@@ -37,10 +38,7 @@ function Blog() {
           name="twitter:title"
           content="PrishSoftware Blog - Stay Informed with Our Latest Insights"
         />
-        <meta
-          name="twitter:image"
-          content="../Components/Assets/newlogo.webp"
-        />
+        <meta name="twitter:image" content={androidChromeIcon} />
         <meta
           name="twitter:description"
           content="Explore the PrishSoftware blog for the latest insights, trends, and updates in the world of software development and technology. Stay informed to stay ahead."

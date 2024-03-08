@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import androidChromeIcon from "../Components/Assets/androidChromIcon.png";
 import Layout from "../Components/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,43 +17,38 @@ function ContactUs() {
         <Helmet>
           {/* Standard meta tags */}
           <title>
-            Contact PrishSoftware - Get in Touch for Expert Assistance
+            Contact PrishaSoftware - Get in Touch for Expert Assistance
           </title>
           <meta
             name="description"
-            content="Contact PrishSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
+            content="Contact PrishaSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
           />
           <meta
             name="keywords"
-            content="Contact PrishSoftware, Contact Us, Get in Touch, Support, Assistance"
+            content="Contact PrishaSoftware, Contact Us, Get in Touch, Support, Assistance"
           />
 
           {/* Facebook and LinkedIn meta tags */}
           <meta
             property="og:title"
-            content="Contact PrishSoftware - Get in Touch for Expert Assistance"
+            content="Contact PrishaSoftware - Get in Touch for Expert Assistance"
           />
-          <meta
-            property="og:image"
-            content="../Components/Assets/newlogo.webp"
-          />
+
+          <meta property="og:image" content={androidChromeIcon} />
           <meta
             property="og:description"
-            content="Contact PrishSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
+            content="Contact PrishaSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
           />
 
           {/* Twitter meta tags */}
           <meta
             name="twitter:title"
-            content="Contact PrishSoftware - Get in Touch for Expert Assistance"
+            content="Contact PrishaSoftware - Get in Touch for Expert Assistance"
           />
-          <meta
-            name="twitter:image"
-            content="../Components/Assets/newlogo.webp"
-          />
+          <meta property="twitter:image" content={androidChromeIcon} />
           <meta
             name="twitter:description"
-            content="Contact PrishSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
+            content="Contact PrishaSoftware today for expert assistance with your software needs. Our team is ready to help you succeed."
           />
         </Helmet>
       </div>

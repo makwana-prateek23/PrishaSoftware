@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../Components/Layout";
+import androidChromeIcon from "../Components/Assets/androidChromIcon.png";
 import Counter from "../Components/Counter";
 import Quality1 from "../Components/Assets/Services/Quality1.png";
 import Quality2 from "../Components/Assets/Services/Quality2.png";
@@ -76,7 +77,7 @@ function Services() {
           property="og:title"
           content="Our Services - Tailored Solutions for Your Business Needs"
         />
-        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta property="og:image" content={androidChromeIcon} />
         <meta
           property="og:description"
           content="Explore our comprehensive range of services at PrishSoftware. From custom software development to IT consulting, we provide tailored solutions to meet your business needs."
@@ -87,10 +88,7 @@ function Services() {
           name="twitter:title"
           content="Our Services - Tailored Solutions for Your Business Needs"
         />
-        <meta
-          name="twitter:image"
-          content="../Components/Assets/newlogo.webp"
-        />
+        <meta name="twitter:image" content={androidChromeIcon} />
         <meta
           name="twitter:description"
           content="Explore our comprehensive range of services at PrishSoftware. From custom software development to IT consulting, we provide tailored solutions to meet your business needs."

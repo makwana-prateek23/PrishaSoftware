@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import androidChromeIcon from "../Components/Assets/androidChromIcon.png";
 import { Link } from "react-router-dom";
 import Layout from "../Components/Layout";
 import Intro from "../Components/Home/Intro";
@@ -23,57 +24,52 @@ function Home() {
       <div>
         <Helmet>
           {/* Standard meta tags */}
-          <title>PrishSoftware - Innovative Solutions for Your Business</title>
-          <meta
-            name="description"
-            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
-          />
-          <meta
-            name="keywords"
-            content="Software solutions, Business technology, Innovation, PrishSoftware"
-          />
 
-          {/* Facebook meta tags */}
-          <meta
-            property="og:title"
-            content="We convert innovation into digitalisation"
-          />
-          <meta
-            property="og:image"
-            content="../Components/Assets/newlogo.webp"
-          />
-          <meta
-            property="og:description"
-            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
-          />
+          <Helmet>
+            {/* Standard meta tags */}
+            <title>Welcome to PrishSoftware</title>
+            <meta
+              name="description"
+              content="Discover innovative software solutions and expert IT services at PrishSoftware. We specialize in custom software development, IT consulting, and cutting-edge technology solutions to help businesses thrive in the digital age."
+            />
+            <meta
+              name="keywords"
+              content="PrishSoftware, Software Solutions, IT Services, Innovation, Digital Age"
+            />
 
-          {/* Twitter meta tags */}
-          <meta
-            name="twitter:title"
-            content="We convert innovation into digitalisation"
-          />
-          <meta
-            name="twitter:image"
-            content="../Components/Assets/newlogo.webp"
-          />
-          <meta
-            name="twitter:description"
-            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
-          />
+            {/* Facebook meta tags */}
+            <meta
+              property="og:title"
+              content="PrishSoftware - Innovation Redefined"
+            />
+            <meta property="og:image" content={androidChromeIcon} />
+            <meta
+              property="og:description"
+              content="Explore innovative software solutions and expert IT services at PrishSoftware. Join us on the journey of digital transformation."
+            />
 
-          {/* LinkedIn meta tags */}
-          <meta
-            property="og:title"
-            content="We convert innovation into digitalisation"
-          />
-          <meta
-            property="og:image"
-            content="../Components/Assets/newlogo.webp"
-          />
-          <meta
-            property="og:description"
-            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
-          />
+            {/* LinkedIn meta tags */}
+            <meta
+              property="og:title"
+              content="PrishSoftware - Empowering Businesses with Innovation"
+            />
+            <meta property="og:image" content={androidChromeIcon} />
+            <meta
+              property="og:description"
+              content="Empower your business with innovative software solutions and expert IT services from PrishSoftware. Together, we can achieve success in the digital era."
+            />
+
+            {/* Twitter meta tags */}
+            <meta
+              name="twitter:title"
+              content="PrishSoftware - Transforming Businesses with Technology"
+            />
+            <meta name="twitter:image" content={androidChromeIcon} />
+            <meta
+              name="twitter:description"
+              content="Transform your business with innovative software solutions and expert IT services from PrishSoftware. Let's embark on a journey of digital transformation together."
+            />
+          </Helmet>
         </Helmet>
 
         {/* The rest of your component's code */}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import androidChromeIcon from "../Components/Assets/androidChromIcon.png";
 import Layout from "../Components/Layout";
 import Like from "../Components/Assets/LIke.png";
 import AboutSwiper from "../Components/AboutSwiper";
@@ -37,7 +38,7 @@ function AboutUs() {
           property="og:title"
           content="About PrishSoftware - Our Mission, Vision, and Team"
         />
-        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta property="og:image" content={androidChromeIcon} />
         <meta
           property="og:description"
           content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
@@ -48,10 +49,7 @@ function AboutUs() {
           name="twitter:title"
           content="About PrishSoftware - Our Mission, Vision, and Team"
         />
-        <meta
-          name="twitter:image"
-          content="../Components/Assets/newlogo.webp"
-        />
+        <meta name="twitter:image" content={androidChromeIcon} />
         <meta
           name="twitter:description"
           content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
@@ -62,7 +60,7 @@ function AboutUs() {
           property="og:title"
           content="About PrishSoftware - Our Mission, Vision, and Team"
         />
-        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta property="og:image" content={androidChromeIcon} />
         <meta
           property="og:description"
           content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
