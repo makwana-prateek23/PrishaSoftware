@@ -8,6 +8,7 @@ function Blog() {
   return (
     <div>
       <Helmet>
+        {/* Standard meta tags */}
         <title>
           PrishSoftware Blog - Stay Informed with Our Latest Insights
         </title>
@@ -20,11 +21,32 @@ function Blog() {
           content="Blog, PrishSoftware Blog, Insights, Technology Trends, Software Development Updates"
         />
 
+        {/* Facebook and LinkedIn meta tags */}
         <meta
-          property="og:image"
-          content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
+          property="og:title"
+          content="PrishSoftware Blog - Stay Informed with Our Latest Insights"
+        />
+        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta
+          property="og:description"
+          content="Explore the PrishSoftware blog for the latest insights, trends, and updates in the world of software development and technology. Stay informed to stay ahead."
+        />
+
+        {/* Twitter meta tags */}
+        <meta
+          name="twitter:title"
+          content="PrishSoftware Blog - Stay Informed with Our Latest Insights"
+        />
+        <meta
+          name="twitter:image"
+          content="../Components/Assets/newlogo.webp"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore the PrishSoftware blog for the latest insights, trends, and updates in the world of software development and technology. Stay informed to stay ahead."
         />
       </Helmet>
+
       <div className="BlogImage">
         <Layout>
           <main>

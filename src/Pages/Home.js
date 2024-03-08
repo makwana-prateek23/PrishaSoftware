@@ -22,6 +22,7 @@ function Home() {
     <div>
       <div>
         <Helmet>
+          {/* Standard meta tags */}
           <title>PrishSoftware - Innovative Solutions for Your Business</title>
           <meta
             name="description"
@@ -32,19 +33,55 @@ function Home() {
             content="Software solutions, Business technology, Innovation, PrishSoftware"
           />
 
+          {/* Facebook meta tags */}
           <meta
             property="og:title"
             content="We convert innovation into digitalisation"
           />
+          <meta
+            property="og:image"
+            content="../Components/Assets/newlogo.webp"
+          />
+          <meta
+            property="og:description"
+            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
+          />
 
-          <meta property="og:image" content="../Components/Assets/logo.webp" />
+          {/* Twitter meta tags */}
+          <meta
+            name="twitter:title"
+            content="We convert innovation into digitalisation"
+          />
+          <meta
+            name="twitter:image"
+            content="../Components/Assets/newlogo.webp"
+          />
+          <meta
+            name="twitter:description"
+            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
+          />
+
+          {/* LinkedIn meta tags */}
+          <meta
+            property="og:title"
+            content="We convert innovation into digitalisation"
+          />
+          <meta
+            property="og:image"
+            content="../Components/Assets/newlogo.webp"
+          />
+          <meta
+            property="og:description"
+            content="Welcome to PrishSoftware! Explore our innovative software solutions designed to drive your business forward. Contact us today to learn more."
+          />
         </Helmet>
+
         {/* The rest of your component's code */}
       </div>
       <div className="wrapper">
         <Layout>
           <main>
-            <div className="py-16 sm:py-8">
+            <div className=" py-12 sm:py-6 md:py-10 lg:py-32 md:pb-0 sm:pb-0">
               <Intro />
             </div>
             <div>
@@ -52,7 +89,7 @@ function Home() {
             </div>
 
             <section
-              className="mx-auto px-4 sm:px-6 lg:px-8 lg:py-16 sm:py-8 max-w-screen-xl"
+              className="mx-auto px-4 sm:px-6 lg:px-8 lg:py-8 sm:py-8 max-w-screen-xl"
               style={{ position: "relative" }}
             >
               <div className="flex flex-col-reverse sm:flex-col  md:flex-col lg:flex-row items-center justify-between py-12 px-6 sm:px-12 lg:px-16 xl:px-24">
@@ -167,19 +204,19 @@ function Home() {
               </div>
             </section>
 
-            <section className="mx-auto px-4 sm:px-6 lg:px-8 sm:py-8 lg:py-16 max-w-screen-xl">
+            <section className="mx-auto px-4 sm:px-6 lg:px-8 sm:py-16 lg:py-16 max-w-screen-xl">
               <div
-                className="grid grid-cols-1 sm:grid-cols-2 py-10"
+                className="grid grid-cols-1 sm:grid-cols-2 py-10 sm:py-12 md:py-10 lg:py-10"
                 style={{
                   backgroundImage: `url(${backimage})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
               >
-                <div className="pl-4 sm:pl-12 mb-4">
-                  <div className="mb-6">
+                <div className="pl-4 sm:pl-12 sm:py-8 md:py-0 lg:py-0 mb-4">
+                  <div className="mb-6 sm:py-8 md:py-0 lg:py-0">
                     <div className="flex flex-col mb-4">
-                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
+                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-3/12 md:w-6/12 lg:w-11/12">
                         <p className="flex-1">
                           What software solutions do you offer?
                         </p>
@@ -201,7 +238,7 @@ function Home() {
                       )}
                     </div>
                     <div className="flex flex-col mb-4">
-                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
+                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4  sm:w-3/12 md:w-6/12 lg:w-11/12">
                         <p className="flex-1">
                           Do you provide ongoing support and maintenance?
                         </p>
@@ -223,7 +260,7 @@ function Home() {
                       )}
                     </div>
                     <div className="flex flex-col mb-4">
-                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4 sm:w-11/12">
+                      <div className="flex justify-between items-center rounded-lg mb-2 bg-red-100 px-4  sm:w-3/12 md:w-6/12 lg:w-11/12">
                         <p className="flex-1">
                           Can you develop software tailored to our specific
                           needs?
@@ -250,7 +287,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="py-4 sm:py-0 mb-4 px-4">
+                <div className="py-6 sm:py-4 mb-4 px-4">
                   <h6
                     className="text-base sm:text-2xl lg:text-lg mb-2"
                     style={{ color: "var(--text-color)" }}

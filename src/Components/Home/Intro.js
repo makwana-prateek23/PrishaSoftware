@@ -1,12 +1,13 @@
 import React from "react";
 import MySwiper from "../MYSwiper";
+
 import { Link } from "react-router-dom";
 function Intro() {
   return (
     <div>
       {" "}
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12  xl:py-24 max-w-screen-xl">
-        <div className=" sm:py-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 sm:py-6 sm:pt-12 md:py-10 lg:py-10  xl:py-24 max-w-screen-xl">
+        <div className="sm:py-16 md:py-12 lg:py-8">
           <div className="text-center">
             {" "}
             <h1
@@ -53,9 +54,9 @@ function Intro() {
             </div>
           </div>
         </div>
-        <section className="mx-auto px-4 sm:px-6 lg:px-8  sm:py-12 lg:py-8 md:py-6 xl:py-12 max-w-screen-xl">
+        <section className="mx-auto px-4 sm:px-4 md:px-6 lg:px-8  sm:py-8 lg:py-16 md:py-10 xl:py-12 max-w-screen-xl">
           <div
-            className="flex justify-center sm:my-8 items-center sm:justify-start sm:items-center md:justify-center lg:justify-center xl:justify-center"
+            className="flex justify-center items-center sm:justify-start sm:items-center md:justify-center lg:justify-center xl:justify-center"
             data-aos-delay="00"
             data-aos="zoom-in"
           >

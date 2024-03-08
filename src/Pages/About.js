@@ -21,6 +21,7 @@ function AboutUs() {
   return (
     <div>
       <Helmet>
+        {/* Standard meta tags */}
         <title>About PrishSoftware - Our Mission, Vision, and Team</title>
         <meta
           name="description"
@@ -30,11 +31,44 @@ function AboutUs() {
           name="keywords"
           content="Prisha Software, Software Company, Reactjs, PHP, About Page,Web development , Software Solution , Digital LandScape , AcccountDigital, 24/7 Support"
         />
+
+        {/* Facebook meta tags */}
         <meta
-          property="og:image"
-          content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
+          property="og:title"
+          content="About PrishSoftware - Our Mission, Vision, and Team"
+        />
+        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta
+          property="og:description"
+          content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
+        />
+
+        {/* Twitter meta tags */}
+        <meta
+          name="twitter:title"
+          content="About PrishSoftware - Our Mission, Vision, and Team"
+        />
+        <meta
+          name="twitter:image"
+          content="../Components/Assets/newlogo.webp"
+        />
+        <meta
+          name="twitter:description"
+          content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
+        />
+
+        {/* LinkedIn meta tags */}
+        <meta
+          property="og:title"
+          content="About PrishSoftware - Our Mission, Vision, and Team"
+        />
+        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta
+          property="og:description"
+          content="Learn about PrishSoftware, our mission, vision, and the dedicated team behind our innovative solutions. Discover how we can help your business succeed."
         />
       </Helmet>
+
       <Layout>
         <div>
           <main>

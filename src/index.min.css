@@ -136,7 +136,7 @@ li.active .line {
 }
 .swiper-container {
   width: 120%;
-  height: 200px;
+  height: 100px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 10px;
@@ -150,7 +150,7 @@ li.active .line {
   .swiper-container {
     display: block;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
   }
 }
@@ -166,7 +166,7 @@ li.active .line {
 @media screen and (min-width: 1024px) {
   .swiper-container {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 .Extra-heading {

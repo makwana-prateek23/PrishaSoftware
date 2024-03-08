@@ -60,6 +60,7 @@ function Services() {
   return (
     <div>
       <Helmet>
+        {/* Standard meta tags */}
         <title>Our Services - Tailored Solutions for Your Business Needs</title>
         <meta
           name="description"
@@ -70,11 +71,32 @@ function Services() {
           content="Services, Solutions, Software Development, IT Consulting, Custom Solutions"
         />
 
+        {/* Facebook and LinkedIn meta tags */}
         <meta
-          property="og:image"
-          content="c:\Users\prishasoftware3\Downloads\Prisha Software1.png"
+          property="og:title"
+          content="Our Services - Tailored Solutions for Your Business Needs"
+        />
+        <meta property="og:image" content="../Components/Assets/newlogo.webp" />
+        <meta
+          property="og:description"
+          content="Explore our comprehensive range of services at PrishSoftware. From custom software development to IT consulting, we provide tailored solutions to meet your business needs."
+        />
+
+        {/* Twitter meta tags */}
+        <meta
+          name="twitter:title"
+          content="Our Services - Tailored Solutions for Your Business Needs"
+        />
+        <meta
+          name="twitter:image"
+          content="../Components/Assets/newlogo.webp"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore our comprehensive range of services at PrishSoftware. From custom software development to IT consulting, we provide tailored solutions to meet your business needs."
         />
       </Helmet>
+
       <Layout>
         <main>
           <div className="ServicesBack  sm: pb-16 md:py-12 lg:py-16 xl:py-16 flex justify-center items-center text-center">
